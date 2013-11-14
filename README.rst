@@ -1,4 +1,4 @@
 salttest-docker
 ===============
 
-Doker Images To Salt's Test Suite
+Docker Images To Salt's Test Suite
