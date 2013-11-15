@@ -1,11 +1,11 @@
-from stackbrew/ubuntu:precise
+from stackbrew/ubuntu:quantal
 MAINTAINER SaltStack, Inc.
 
 # Keep upstart from complaining
 # RUN dpkg-divert --local --rename --add /sbin/initctl
 # RUN ln -s /bin/true /sbin/initctl
 
-RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe multiverse restricted" > /etc/apt/sources.list && \
+RUN echo "deb http://archive.ubuntu.com/ubuntu quantal main universe multiverse restricted" > /etc/apt/sources.list && \
   apt-get update && \
   apt-get upgrade && apt-get install -y -o DPkg::Options::=--force-confold apt-utils && \
   apt-get install -y -o DPkg::Options::=--force-confold python-software-properties \

@@ -1,11 +1,11 @@
-from stackbrew/ubuntu:precise
+from stackbrew/ubuntu:raring
 MAINTAINER SaltStack, Inc.
 
 # Keep upstart from complaining
 # RUN dpkg-divert --local --rename --add /sbin/initctl
 # RUN ln -s /bin/true /sbin/initctl
 
-RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe multiverse restricted" > /etc/apt/sources.list && \
+RUN echo "deb http://archive.ubuntu.com/ubuntu raring main universe multiverse restricted" > /etc/apt/sources.list && \
   apt-get update && \
   apt-get upgrade && apt-get install -y -o DPkg::Options::=--force-confold apt-utils && \
   apt-get install -y -o DPkg::Options::=--force-confold python-software-properties \
@@ -19,5 +19,4 @@ RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe multiverse 
 RUN easy_install mock timelib https://github.com/saltstack/salt-testing/archive/develop.tar.gz
 
 RUN git clone https://github.com/saltstack/salt /root/salt && cd /root/salt && python setup.py install
-
 
