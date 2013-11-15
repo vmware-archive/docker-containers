@@ -17,6 +17,3 @@ RUN echo "deb http://archive.ubuntu.com/ubuntu raring main universe multiverse r
   apt-get upgrade
 
 RUN easy_install mock timelib https://github.com/saltstack/salt-testing/archive/develop.tar.gz
-
-RUN git clone https://github.com/saltstack/salt /root/salt && cd /root/salt && python setup.py install
-
