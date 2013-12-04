@@ -1,19 +1,20 @@
-from stackbrew/debian:wheezy
+from saltstack/debian-7-minimal
 MAINTAINER SaltStack, Inc.
 
 # Keep upstart from complaining
 # RUN dpkg-divert --local --rename --add /sbin/initctl
 # RUN ln -s /bin/true /sbin/initctl
 
-RUN apt-get update && apt-get install -y -o DPkg::Options::=--force-confold wget && \
-  wget -q -O- "http://debian.saltstack.com/debian-salt-team-joehealy.gpg.key" | apt-key add - && \
-  echo "deb http://debian.saltstack.com/debian wheezy-saltstack main" > /etc/apt/sources.list.d/saltstack.list && \
-  apt-get update && \
-  apt-get upgrade -y && apt-get install -y -o DPkg::Options::=--force-confold apt-utils \
-     python-software-properties \
-     software-properties-common supervisor rabbitmq-server \
-     ruby python git-core subversion mercurial git-core \
-     python-yaml python-m2crypto python-crypto \
-     msgpack-python python-zmq python-jinja2 python-setuptools python-virtualenv python-dev
-
-RUN easy_install mock timelib https://github.com/saltstack/salt-testing/archive/develop.tar.gz
+# Install Testing Dependencies
+RUN apt-get install -y -o DPkg::Options::=--force-confold supervisor
+RUN apt-get install -y -o DPkg::Options::=--force-confold rabbitmq-server
+RUN apt-get install -y -o DPkg::Options::=--force-confold ruby
+RUN apt-get install -y -o DPkg::Options::=--force-confold git-core
+RUN apt-get install -y -o DPkg::Options::=--force-confold subversion
+RUN apt-get install -y -o DPkg::Options::=--force-confold mercurial
+RUN apt-get install -y -o DPkg::Options::=--force-confold python-setuptools
+RUN apt-get install -y -o DPkg::Options::=--force-confold python-virtualenv
+RUN apt-get install -y -o DPkg::Options::=--force-confold python-dev
+RUN easy_install mock
+RUN easy_install timelib
+RUN easy_install https://github.com/saltstack/salt-testing/archive/develop.tar.gz
