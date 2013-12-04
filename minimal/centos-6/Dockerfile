@@ -16,10 +16,3 @@ RUN yum -y install --enablerepo=epel python-crypto
 RUN yum -y install --enablerepo=epel python-msgpack
 RUN yum -y install --enablerepo=epel python-zmq
 RUN yum -y install --enablerepo=epel python-jinja2
-
-# Install Salt's Test Suite Dependencies
-RUN yum install -y python-devel python-setuptools python-virtualenv supervisor \
-  rabbitmq-server git subversion mercurial gcc \
-  --enablerepo=epel
-RUN easy_install unittest2 mock timelib \
-  https://github.com/saltstack/salt-testing/archive/develop.tar.gz
