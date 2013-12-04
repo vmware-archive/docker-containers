@@ -10,8 +10,8 @@ RUN yum update -y
 
 # Install Salt Dependencies
 RUN yum -y install --enablerepo=epel python
-RUN yum -y install --enablerepo=epel python-PyYAML
-RUN yum -y install --enablerepo=epel python-m2crypto
+RUN yum -y install --enablerepo=epel PyYAML
+RUN yum -y install --enablerepo=epel m2crypto
 RUN yum -y install --enablerepo=epel python-crypto
 RUN yum -y install --enablerepo=epel python-msgpack
 RUN yum -y install --enablerepo=epel python-zmq
