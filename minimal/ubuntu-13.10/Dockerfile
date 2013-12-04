@@ -14,7 +14,7 @@ RUN echo "deb http://archive.ubuntu.com/ubuntu saucy main universe multiverse re
 
 # Add the Salt PPA
 RUN apt-get install -y -o DPkg::Options::=--force-confold apt-utils python-software-properties software-properties-common && \
-  apt-add-repository ppa:saltstack/salt && apt-get update
+  apt-add-repository -y ppa:saltstack/salt && apt-get update
 
 # Install Salt Dependencies
 RUN apt-get install -y -o DPkg::Options::=--force-confold python
