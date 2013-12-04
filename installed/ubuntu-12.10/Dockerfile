@@ -1,4 +1,8 @@
-from saltstack/ubuntu-12.10
+from saltstack/ubuntu-12.10-minimal
 MAINTAINER SaltStack, Inc.
 
-RUN git clone https://github.com/saltstack/salt /root/salt && cd /root/salt && python setup.py install
+# Install Dependencies
+RUN apt-get install -y -o DPkg::Options::=--force-confold python-setuptools
+
+# Install Salt
+RUN easy_install https://github.com/saltstack/salt/archive/develop.tar.gz
