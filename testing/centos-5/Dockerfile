@@ -11,7 +11,5 @@ RUN yum install -y --enablerepo=epel git
 RUN yum install -y --enablerepo=epel subversion
 RUN yum install -y --enablerepo=epel mercurial
 RUN yum install -y --enablerepo=epel gcc
-RUN easy_install-2.6 unittest2
-RUN easy_install-2.6 mock
-RUN easy_install-2.6 timelib
+RUN easy_install-2.6 unittest2 mock timelib apache-libcloud
 RUN easy_install-2.6 https://github.com/saltstack/salt-testing/archive/develop.tar.gz
