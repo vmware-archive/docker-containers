@@ -22,6 +22,9 @@ RUN pacman -Sy --noconfirm --needed base-devel
 #RUN curl -O https://aur.archlinux.org/packages/ya/yaourt/yaourt.tar.gz && \
 #  tar zxvf yaourt.tar.gz && cd yaourt && makepkg -si --asroot && cd .. && rm -rf ./yaourt
 
+# Let's support '#!/usr/bin/env python'
+RUN ln -s /usr/bin/python2 /usr/bin/python && ln -s /usr/bin/python2-config /usr/bin/python-config
+
 # Install Testing Dependencies
 RUN pacman -Sy --noconfirm supervisor
 #RUN yaourt -Sy --noconfirm --aur rabbitmq
@@ -30,6 +33,5 @@ RUN pacman -Sy --noconfirm git
 RUN pacman -Sy --noconfirm subversion
 RUN pacman -Sy --noconfirm mercurial
 RUN pacman -Sy --noconfirm python2-virtualenv
-RUN easy_install-2.7 mock
-RUN easy_install-2.7 timelib
+RUN easy_install-2.7 mock timelib apache-libcloud
 RUN easy_install-2.7 https://github.com/saltstack/salt-testing/archive/develop.tar.gz
