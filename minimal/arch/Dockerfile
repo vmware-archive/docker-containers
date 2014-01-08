@@ -13,7 +13,7 @@ RUN echo -e 'Server = http://intothesaltmine.org/archlinux\nSigLevel = Optional 
 RUN pacman -Syyu --noconfirm
 
 # Install Salt Dependencies
-RUN pacman -Sy --noconfir python2
+RUN pacman -Sy --noconfirm python2
 RUN pacman -Sy --noconfirm python2-yaml
 RUN pacman -Sy --noconfirm python2-jinja
 RUN pacman -Sy --noconfirm python2-pyzmq
