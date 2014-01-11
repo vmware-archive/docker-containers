@@ -26,6 +26,7 @@ RUN pacman -Sy --noconfirm --needed base-devel
 RUN ln -s /usr/bin/python2 /usr/bin/python && ln -s /usr/bin/python2-config /usr/bin/python-config
 
 # Install Testing Dependencies
+RUN pacman -Sy --noconfirm openssh
 RUN pacman -Sy --noconfirm supervisor
 #RUN yaourt -Sy --noconfirm --aur rabbitmq
 RUN pacman -Sy --noconfirm ruby
