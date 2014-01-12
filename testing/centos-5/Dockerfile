@@ -1,11 +1,16 @@
 from saltstack/centos-5-minimal
 MAINTAINER SaltStack, Inc.
 
+# Let's support '#!/usr/bin/env python'
+RUN ln -sf /usr/bin/python2.6 /usr/bin/python && ln -sf /usr/bin/python2.6-config /usr/bin/python-config
+
 # Install Salt's Test Suite Dependencies
 #   Required testing build dependencies
 RUN yum install -y --enablerepo=epel gcc
 RUN yum install -y --enablerepo=epel python26-devel
 RUN yum install -y --enablerepo=epel python26-setuptools
+#   Required testing build dependencies only available trough PyPi
+RUN easy_install-2.6 coverage https://github.com/danielfm/unittest-xml-reporting/archive/master.tar.gz
 
 #   Required Testing Libraries
 RUN yum install -y --enablerepo=epel python26-virtualenv
@@ -23,5 +28,4 @@ RUN yum install -y --enablerepo=epel rabbitmq-server
 
 #   Requirements only available trough PyPi
 # python26-pip is not available
-RUN easy_install-2.6 pip unittest2 mock timelib apache-libcloud
-RUN easy_install-2.6 https://github.com/saltstack/salt-testing/archive/develop.tar.gz
+RUN easy_install-2.6 pip unittest2 mock timelib apache-libcloud https://github.com/saltstack/salt-testing/archive/develop.tar.gz 
