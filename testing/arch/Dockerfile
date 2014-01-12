@@ -36,5 +36,5 @@ RUN pacman -Sy --noconfirm mercurial
 RUN pacman -Sy --noconfirm python2-pip
 RUN pacman -Sy --noconfirm python2-virtualenv
 RUN pacman -Sy --noconfirm mysql-python
-RUN easy_install-2.7 mock timelib apache-libcloud
-RUN easy_install-2.7 https://github.com/saltstack/salt-testing/archive/develop.tar.gz
+RUN easy_install-2.7 mock timelib apache-libcloud coverage
+RUN easy_install-2.7 https://github.com/saltstack/salt-testing/archive/develop.tar.gz https://github.com/danielfm/unittest-xml-reporting/archive/develop.tar.gz
