@@ -20,6 +20,7 @@ RUN yum install -y --enablerepo=epel subversion
 RUN yum install -y --enablerepo=epel mercurial
 
 #   Required Testing Daemons
+RUN yum install -y --enablerepo=epel openssl
 RUN yum install -y --enablerepo=epel supervisor
 RUN yum install -y --enablerepo=epel rabbitmq-server
 
