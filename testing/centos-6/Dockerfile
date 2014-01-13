@@ -11,7 +11,7 @@ RUN easy_install coverage https://github.com/danielfm/unittest-xml-reporting/arc
 
 #   Required Testing Libraries
 RUN yum install -y --enablerepo=epel python-virtualenv
-RUN yum install -y --enablerepo=epel python-mysqldb
+RUN yum install -y --enablerepo=epel MySQL-python
 RUN yum install -y --enablerepo=epel ruby
 
 #   Required Testing CLI Binaries
