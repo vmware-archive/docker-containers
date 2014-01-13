@@ -6,8 +6,6 @@ MAINTAINER SaltStack, Inc.
 RUN yum install -y --enablerepo=epel gcc
 RUN yum install -y --enablerepo=epel python-devel
 RUN yum install -y --enablerepo=epel python-setuptools
-#   Required testing build dependencies only available trough PyPi
-RUN easy_install coverage https://github.com/danielfm/unittest-xml-reporting/archive/master.tar.gz
 
 #   Required Testing Libraries
 RUN yum install -y --enablerepo=epel python-virtualenv
@@ -26,4 +24,6 @@ RUN yum install -y --enablerepo=epel rabbitmq-server
 
 #   Requirements only available trough PyPi
 # python26-pip is not available
-RUN easy_install pip mock timelib apache-libcloud https://github.com/saltstack/salt-testing/archive/develop.tar.gz
+RUN easy_install pip mock timelib apache-libcloud unittest2 coverage \
+  https://github.com/saltstack/salt-testing/archive/develop.tar.gz \
+  https://github.com/danielfm/unittest-xml-reporting/archive/master.tar.gz
