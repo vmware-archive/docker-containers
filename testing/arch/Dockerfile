@@ -14,7 +14,7 @@ RUN pacman -Sy --noconfirm mysql-python
 RUN pacman -Sy --noconfirm ruby
 
 #   Required Testing CLI Binaries
-RUN pacman -Sy --noconfirm gitt
+RUN pacman -Sy --noconfirm git
 RUN pacman -Sy --noconfirm subversion
 RUN pacman -Sy --noconfirm mercurial
 
