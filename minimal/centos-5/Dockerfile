@@ -7,14 +7,12 @@ RUN rpm -Uvh --force http://mirrors.kernel.org/fedora-epel/5/x86_64/epel-release
 # Update Current Image
 RUN yum update -y
 
-# Install system binaries required by salt
-RUN yum -y install --enablerepo=epel which
-
 # Install Salt Dependencies
-RUN yum -y install --enablerepo=epel python26
-RUN yum -y install --enablerepo=epel python26-PyYAML
-RUN yum -y install --enablerepo=epel python26-m2crypto
-RUN yum -y install --enablerepo=epel python26-crypto
-RUN yum -y install --enablerepo=epel python26-msgpack
-RUN yum -y install --enablerepo=epel python26-zmq
-RUN yum -y install --enablerepo=epel python26-jinja2
+RUN yum -y install --enablerepo=epel \
+  python26 \
+  python26-PyYAML \
+  python26-m2crypto \
+  python26-crypto \
+  python26-msgpack \
+  python26-zmq \
+  python26-jinja2
