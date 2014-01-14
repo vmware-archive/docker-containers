@@ -17,13 +17,14 @@ RUN apt-get install -y -o DPkg::Options::=--force-confold wget && \
 RUN apt-get update && apt-get upgrade -y -o DPkg::Options::=--force-confold
 
 # Install Salt Dependencies
-RUN apt-get install -y -o DPkg::Options::=--force-confold python
-RUN apt-get install -y -o DPkg::Options::=--force-confold apt-utils
-RUN apt-get install -y -o DPkg::Options::=--force-confold python-software-properties
-RUN apt-get install -y -o DPkg::Options::=--force-confold software-properties-common
-RUN apt-get install -y -o DPkg::Options::=--force-confold python-yaml
-RUN apt-get install -y -o DPkg::Options::=--force-confold python-m2crypto
-RUN apt-get install -y -o DPkg::Options::=--force-confold python-crypto
-RUN apt-get install -y -o DPkg::Options::=--force-confold msgpack-python
-RUN apt-get install -y -o DPkg::Options::=--force-confold python-zmq
-RUN apt-get install -y -o DPkg::Options::=--force-confold python-jinja2
+RUN apt-get install -y -o DPkg::Options::=--force-confold \
+  python \
+  apt-utils \
+  python-software-properties \
+  software-properties-common \
+  python-yaml \
+  python-m2crypto \
+  python-crypto \
+  msgpack-python \
+  python-zmq \
+  python-jinja2
