@@ -1,7 +1,6 @@
 from base/arch
 MAINTAINER SaltStack, Inc.
 
-
 # Create a pacman .d directory so we can just override salt's included configuration if needed
 RUN [ -d /etc/pacman.d ] || mkdir -p /etc/pacman.d
 
@@ -13,11 +12,12 @@ RUN echo -e 'Server = http://intothesaltmine.org/archlinux\nSigLevel = Optional 
 RUN pacman -Syyu --noconfirm
 
 # Install Salt Dependencies
-RUN pacman -Sy --noconfirm python2
-RUN pacman -Sy --noconfirm python2-yaml
-RUN pacman -Sy --noconfirm python2-jinja
-RUN pacman -Sy --noconfirm python2-pyzmq
-RUN pacman -Sy --noconfirm python2-crypto
-RUN pacman -Sy --noconfirm python2-psutil
-RUN pacman -Sy --noconfirm python2-msgpack
-RUN pacman -Sy --noconfirm python2-m2crypto
+RUN pacman -Sy --noconfirm \
+  python2 \
+  python2-yaml \
+  python2-jinja \
+  python2-pyzmq \
+  python2-crypto \
+  python2-psutil \
+  python2-msgpack \
+  python2-m2crypto
