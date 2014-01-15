@@ -1,8 +1,10 @@
 from saltstack/ubuntu-12.10-minimal
 MAINTAINER SaltStack, Inc.
 
-# Install Dependencies
-RUN apt-get install -y -o DPkg::Options::=--force-confold python-setuptools
+# Upgrade System and Install dependencies
+RUN apt-get update && \
+  apt-get upgrade -y -o DPkg::Options::=--force-confold && \
+  apt-get install -y -o DPkg::Options::=--force-confold curl
 
-# Install Salt
-RUN easy_install https://github.com/saltstack/salt/archive/develop.tar.gz
+# Install Latest Salt from the Develop Branch
+RUN curl -L http://bootstrap.saltstack.org | sh -s -- git develop
