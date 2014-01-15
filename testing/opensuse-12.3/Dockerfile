@@ -18,7 +18,7 @@ RUN zypper --non-interactive install --auto-agree-with-licenses \
   python-mock \
   python-psutil \
   python-coverage \
-  python-MySQL-python \
+  python-MySQL-python
 
 
 RUN easy_install \
