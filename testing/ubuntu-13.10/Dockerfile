@@ -14,7 +14,7 @@ RUN apt-get install -y -o DPkg::Options::=--force-confold \
   ruby \
   git-core \
   mercurial \
-  supervidor \
+  supervisor \
   openssh-client \
   rabbitmq-server
 
