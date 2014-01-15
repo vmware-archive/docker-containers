@@ -1,8 +1,8 @@
 from saltstack/centos-5-minimal
 MAINTAINER SaltStack, Inc.
 
-# Install Dependencies
-RUN yum install -y --enablerepo=epel python26-setuptools
+# Update Current Image and install dependencies
+RUN yum update -y && yum install -y --enablerepo=epel curl
 
-# Install Salt
-RUN easy_install-2.6 https://github.com/saltstack/salt/archive/develop.tar.gz
+# Install Latest Salt from the Develop Branch
+RUN curl -L http://bootstrap.saltstack.org | sh -s -- git develop
