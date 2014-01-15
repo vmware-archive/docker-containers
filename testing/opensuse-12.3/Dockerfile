@@ -6,6 +6,7 @@ RUN zypper --gpg-auto-import-keys --non-interactive refresh && zypper --gpg-auto
 
 # Install Testing Dependencies
 RUN zypper --non-interactive install --auto-agree-with-licenses \
+  gcc \
   python-devel \
   python-pip \
   python-setuptools \
