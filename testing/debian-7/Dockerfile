@@ -20,7 +20,7 @@ RUN apt-get install -y -o DPkg::Options::=--force-confold \
   mercurial \
   supervidor \
   openssh-client \
-  rabbitmq-server \
+  rabbitmq-server
 
 RUN easy_install \
   mock \
