@@ -1,8 +1,10 @@
 from saltstack/opensuse-12.3-minimal
 MAINTAINER SaltStack, Inc.
 
-# Install Dependencies
-RUN zypper --non-interactive install --auto-agree-with-licenses python-setuptools
+# Upgrade System and Install dependencies
+RUN zypper --gpg-auto-import-keys --non-interactive refresh && \
+  zypper --gpg-auto-import-keys --non-interactive update && \
+  zypper --non-interactive install --auto-agree-with-licenses  curl
 
-# Install Salt
-RUN easy_install https://github.com/saltstack/salt/archive/develop.tar.gz
+# Install Latest Salt from the Develop Branch
+RUN curl -L http://bootstrap.saltstack.org | sh -s -- git develop
