@@ -1,6 +1,8 @@
 REPO           =
 REPOBASE       = $(shell basename $(shell dirname `pwd`))
 CONTAINER_NAME = $(shell basename `pwd`)
+RM             = true
+NO_CACHE       = false
 
 ifeq ($(shell [ "$(REPOBASE)" = "testing" ] && echo 1 || echo 0), 1)
 	REPO=salttest/$(CONTAINER_NAME)
@@ -25,6 +27,6 @@ container:
 	$(info CONTAINER_NAME = $(CONTAINER_NAME))
 
 	@echo "Building $(REPO) container..."
-	docker build -rm=true -t $(REPO) .
+	docker build -no-cache=$(NO_CACHE) -rm=$(RM) -t $(REPO) .
 	@echo "Done"
 
