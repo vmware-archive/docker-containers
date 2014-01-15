@@ -1,16 +1,27 @@
 from saltstack/ubuntu-13.10-minimal
 MAINTAINER SaltStack, Inc.
 
+# Update System
+RUN apt-get update && apt-get upgrade -y -o DPkg::Options::=--force-confold
+
 # Install Testing Dependencies
-RUN apt-get install -y -o DPkg::Options::=--force-confold supervisor
-RUN apt-get install -y -o DPkg::Options::=--force-confold rabbitmq-server
-RUN apt-get install -y -o DPkg::Options::=--force-confold ruby
-RUN apt-get install -y -o DPkg::Options::=--force-confold git-core
-RUN apt-get install -y -o DPkg::Options::=--force-confold subversion
-RUN apt-get install -y -o DPkg::Options::=--force-confold mercurial
-RUN apt-get install -y -o DPkg::Options::=--force-confold python-setuptools
-RUN apt-get install -y -o DPkg::Options::=--force-confold python-virtualenv
-RUN apt-get install -y -o DPkg::Options::=--force-confold python-dev
-RUN easy_install mock
-RUN easy_install timelib
-RUN easy_install https://github.com/saltstack/salt-testing/archive/develop.tar.gz
+RUN apt-get install -y -o DPkg::Options::=--force-confold \
+  python-dev \
+  python-pip \
+  python-setuptools \
+  python-virtualenv \
+  ruby \
+  git-core \
+  mercurial \
+  supervidor \
+  openssh-client \
+  rabbitmq-server \
+
+RUN easy_install \
+  mock \
+  psutil \
+  timelib \
+  apache-libcloud \
+  coverage \
+  https://github.com/saltstack/salt-testing/archive/develop.tar.gz \
+  https://github.com/danielfm/unittest-xml-reporting/archive/master.tar.gz
