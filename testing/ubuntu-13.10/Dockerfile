@@ -8,6 +8,7 @@ RUN apt-get update && apt-get upgrade -y -o DPkg::Options::=--force-confold
 RUN apt-get install -y -o DPkg::Options::=--force-confold \
   python-dev \
   python-pip \
+  python-mysqldb \
   python-setuptools \
   python-virtualenv \
   ruby \
