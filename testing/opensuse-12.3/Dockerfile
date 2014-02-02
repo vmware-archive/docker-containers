@@ -15,6 +15,7 @@ RUN zypper --non-interactive install --auto-agree-with-licenses \
   git-core \
   subversion \
   mercurial \
+  supervisor \
   rabbitmq-server \
   python-mock \
   python-psutil \
@@ -27,3 +28,9 @@ RUN easy_install \
   apache-libcloud \
   https://github.com/saltstack/salt-testing/archive/develop.tar.gz \
   https://github.com/danielfm/unittest-xml-reporting/archive/master.tar.gz
+
+ADD https://raw.github.com/saltstack/docker-containers/master/scripts/bootstrap-docker.sh /bootstrap-docker.sh
+
+ENTRYPOINT ["/bin/sh", "/bootstrap-docker.sh", \
+  "supervisord -c /etc/supervisord.conf", \
+  "/etc/init.d/rabbitmq-server start"]
