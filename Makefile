@@ -10,6 +10,9 @@ else ifeq ($(shell [ "$(REPOBASE)" = "installed" ] && echo 1 || echo 0), 1)
 	REPO=saltstack/$(CONTAINER_NAME)
 else ifeq ($(shell [ "$(REPOBASE)" = "minimal" ] && echo 1 || echo 0), 1)
 	REPO=saltstack/$(CONTAINER_NAME)-minimal
+else ifeq ($(shell [ "$(REPOBASE)" = "transifex" ] && echo 1 || echo 0), 1)
+	CONTAINER_NAME=transifex
+	REPO=saltstack/$(CONTAINER_NAME)
 endif
 
 ifndef REPO
