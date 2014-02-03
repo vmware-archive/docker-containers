@@ -37,10 +37,15 @@ if [ $# -eq 0 ]; then
     exit 1
 fi
 
+last_call_ecode=0
+
 for call in "$@"; do
     ruller
     echo "Running: $call"
     ruller
     eval $call
+    last_call_ecode=$?
     echo
 done
+
+exit $last_call_ecode
