@@ -8,12 +8,10 @@ RUN pacman -Syyu --noconfirm
 #   Required Libraries
 RUN pacman -Sy --noconfirm \
   make \
-  python2-pygments \
-  python2-sphinx \
   python2-pip 
 
 #   Requirements only available trough PyPi
-RUN easy_install-2.7 https://github.com/s0undt3ch/transifex-client/archive/hotfix/custom-slugs.tar.gz
+RUN easy_install-2.7 sphinx https://github.com/s0undt3ch/transifex-client/archive/hotfix/custom-slugs.tar.gz
 
 # Some symlinks to make our life easier
 RUN ln -sf /usr/bin/python2 /usr/bin/python && ln -sf /usr/bin/sphinx-build2 /usr/bin/sphinx-build
