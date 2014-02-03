@@ -4,6 +4,9 @@ MAINTAINER SaltStack, Inc.
 # Install EPEL
 RUN rpm -Uvh --force http://mirrors.kernel.org/fedora-epel/5/x86_64/epel-release-5-4.noarch.rpm
 
+# Update openssl first, lets see if this works out
+RUN yum -y install --enablerepo=epel openssl
+
 # Update Current Image
 RUN yum update -y
 
