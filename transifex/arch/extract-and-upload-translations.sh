@@ -37,9 +37,16 @@ fi
 
 ruller
 /salt-source/doc/.scripts/setup-transifex-config
+exc=$?
+
+if [ $exc -ne 0 ]; then
+    exit $exc
+fi
 
 ruller
 /salt-source/doc/.scripts/update-transifex-source-translations
+exc=$?
 
 ruller
 echo DONE
+exit $exc
