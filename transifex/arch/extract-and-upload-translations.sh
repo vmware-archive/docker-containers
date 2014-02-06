@@ -22,7 +22,7 @@
 
 set -o nounset                              # Treat unset variables as an error
 
-SCREEN_WIDTH=${COLUMNS:-$(tput cols 2>/dev/null || echo 80)}
+SCREEN_WIDTH=${COLUMNS:-$(tput cols 2>/dev/null)}
 
 ruller() {
   printf '%*s\n' $SCREEN_WIDTH '' | tr ' ' -
