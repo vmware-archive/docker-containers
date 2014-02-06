@@ -13,6 +13,9 @@ else ifeq ($(shell [ "$(REPOBASE)" = "minimal" ] && echo 1 || echo 0), 1)
 else ifeq ($(shell [ "$(REPOBASE)" = "transifex" ] && echo 1 || echo 0), 1)
 	CONTAINER_NAME=transifex
 	REPO=saltstack/$(CONTAINER_NAME)
+else ifeq ($(shell [ "$(REPOBASE)" = "lint" ] && echo 1 || echo 0), 1)
+	CONTAINER_NAME=lint
+	REPO=salttest/$(CONTAINER_NAME)
 endif
 
 ifndef REPO
