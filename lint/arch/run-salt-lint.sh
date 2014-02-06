@@ -44,6 +44,10 @@ fi
 
 
 ruller
+echo " * PyLint Versions"
+pylint --rcfile=/salt-source/.testing.pylintrc --version
+
+ruller
 echo " * Running PyLint against Salt's source code"
 pylint --rcfile=/salt-source/.testing.pylintrc /salt-source/salt/ | tee /salt-source/pylint-report.xml && (EC1=${PIPESTATUS[0]})
 
