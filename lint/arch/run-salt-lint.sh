@@ -21,8 +21,8 @@
 set -o nounset                              # Treat unset variables as an error
 
 # Set the expected exit codes variable to 1
-EC1=1
-EC2=1
+EC1=-1
+EC2=-1
 
 SCREEN_WIDTH=${COLUMNS:-$(tput cols 2>/dev/null)}
 
@@ -56,7 +56,12 @@ echo " * Running PyLint against Salt's tests suite"
 pylint --rcfile=/salt-source/.testing.pylintrc --disable=W0232,E1002 /salt-source/tests/ | tee /salt-source/pylint-report-tests.xml && (EC2=${PIPESTATUS[0]})
 
 ruller
-echo "DONE"
+echo " * DONE"
+
+ruller
+echo " * 1st PyLint Execution Exit Code: ${EC1}"
+echo " * 2nd PyLint Execution Exit Code: ${EC2}"
+ruller
 
 if [ $EC1 -ne 0 ]; then
     exit $EC1
