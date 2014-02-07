@@ -49,11 +49,11 @@ pylint --rcfile=/salt-source/.testing.pylintrc --version
 
 ruller
 echo " * Running PyLint against Salt's source code"
-pylint --rcfile=/salt-source/.testing.pylintrc /salt-source/salt/ | tee /salt-source/pylint-report.xml && (EC1=${PIPESTATUS[0]})
+pylint --rcfile=/salt-source/.testing.pylintrc /salt-source/salt/ | tee /salt-source/pylint-report.xml; EC1=${PIPESTATUS[0]}
 
 ruller
 echo " * Running PyLint against Salt's tests suite"
-pylint --rcfile=/salt-source/.testing.pylintrc --disable=W0232,E1002 /salt-source/tests/ | tee /salt-source/pylint-report-tests.xml && (EC2=${PIPESTATUS[0]})
+pylint --rcfile=/salt-source/.testing.pylintrc --disable=W0232,E1002 /salt-source/tests/ | tee /salt-source/pylint-report-tests.xml; EC2=${PIPESTATUS[0]}
 
 ruller
 echo " * DONE"
