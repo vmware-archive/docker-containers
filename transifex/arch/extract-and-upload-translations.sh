@@ -36,7 +36,7 @@ if [ $# -ne 0 ]; then
 fi
 
 ruller
-/salt-source/doc/.scripts/setup-transifex-config
+python2 /salt-source/doc/.scripts/setup-transifex-config
 exc=$?
 
 if [ $exc -ne 0 ]; then
@@ -44,7 +44,7 @@ if [ $exc -ne 0 ]; then
 fi
 
 ruller
-/salt-source/doc/.scripts/update-transifex-source-translations
+python2 /salt-source/doc/.scripts/update-transifex-source-translations
 exc=$?
 
 ruller
