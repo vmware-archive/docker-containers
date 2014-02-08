@@ -35,5 +35,5 @@ RUN easy_install \
 ADD https://raw.github.com/saltstack/docker-containers/master/scripts/bootstrap-docker.sh /bootstrap-docker.sh
 
 ENTRYPOINT ["/bin/sh", "/bootstrap-docker.sh", \
-  "/etc/init.d/supervisor start", \
+  "/etc/init.d/supervisord start", \
   "/etc/init.d/rabbitmq-server start"]
