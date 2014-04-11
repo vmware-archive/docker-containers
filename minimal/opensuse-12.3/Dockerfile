@@ -22,4 +22,5 @@ RUN zypper --non-interactive install --auto-agree-with-licenses \
   python-msgpack-python \
   python-pycrypto \
   python-pyzmq \
-  python-xml
+  python-xml \
+  python-requests

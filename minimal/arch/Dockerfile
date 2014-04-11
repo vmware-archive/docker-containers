@@ -20,4 +20,5 @@ RUN pacman -Sy --noconfirm \
   python2-crypto \
   python2-psutil \
   python2-msgpack \
-  python2-m2crypto
+  python2-m2crypto \
+  python2-requests

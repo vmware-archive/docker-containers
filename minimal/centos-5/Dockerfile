@@ -18,4 +18,5 @@ RUN yum -y install --enablerepo=epel \
   python26-crypto \
   python26-msgpack \
   python26-zmq \
-  python26-jinja2
+  python26-jinja2 \
+  python26-requests

@@ -27,4 +27,5 @@ RUN apt-get install -y -o DPkg::Options::=--force-confold \
   python-crypto \
   msgpack-python \
   python-zmq \
-  python-jinja2
+  python-jinja2 \
+  python-requests
