@@ -7,4 +7,4 @@ RUN zypper --gpg-auto-import-keys --non-interactive refresh && \
   zypper --non-interactive install --auto-agree-with-licenses  curl
 
 # Install Latest Salt from the Develop Branch
-RUN curl -L http://bootstrap.saltstack.org | sh -s -- git develop
+RUN curl -L http://bootstrap.saltstack.org | sh -s -- -X git develop
