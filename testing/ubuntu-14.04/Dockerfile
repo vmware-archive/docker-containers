@@ -1,34 +1,29 @@
-from saltstack/arch-minimal
+from saltstack/ubuntu-14.04-minimal
 MAINTAINER SaltStack, Inc.
 
 # Update System
-RUN pacman -Syyu --noconfirm
-RUN pacman -Sy --noconfirm --needed base-devel
+RUN apt-get update && apt-get upgrade -y -o DPkg::Options::=--force-confold
 
-#   Required Testing Libraries
-RUN pacman -Sy --noconfirm \
-  git \
-  mercurial \
-  mysql-python \
-  openssh \
-  python2-mock \
-  python2-pip \
-  python2-setuptools \
-  python2-virtualenv \
+# Install Testing Dependencies
+RUN apt-get install -y -o DPkg::Options::=--force-confold \
+  python-dev \
+  python-pip \
+  python-mysqldb \
+  python-setuptools \
+  python-virtualenv \
   ruby \
-  subversion \
+  git-core \
+  mercurial \
   supervisor \
-  tar \
-  which
+  openssh-client \
+  rabbitmq-server
 
-#RUN yaourt -Sy --noconfirm --aur rabbitmq
-
-#   Requirements only available trough PyPi
-RUN easy_install-2.7 \
-  apache-libcloud \
-  coverage \
+RUN easy_install \
+  mock \
   psutil \
   timelib \
+  apache-libcloud \
+  coverage \
   GitPython \
   requests \
   keyring \
@@ -43,4 +38,5 @@ RUN easy_install-2.7 \
 ADD https://raw.github.com/saltstack/docker-containers/master/scripts/bootstrap-docker.sh /bootstrap-docker.sh
 
 ENTRYPOINT ["/bin/sh", "/bootstrap-docker.sh", \
-  "supervisord"]
+  "/etc/init.d/supervisor start", \
+  "/etc/init.d/rabbitmq-server start"]

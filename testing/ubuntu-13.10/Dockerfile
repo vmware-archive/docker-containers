@@ -24,6 +24,14 @@ RUN easy_install \
   timelib \
   apache-libcloud \
   coverage \
+  GitPython \
+  requests \
+  keyring \
+  python-gnupg \
+  CherryPy \
+  tornado \
+  boto \
+  moto \
   https://github.com/saltstack/salt-testing/archive/develop.tar.gz \
   https://github.com/danielfm/unittest-xml-reporting/archive/master.tar.gz
 
