@@ -15,5 +15,8 @@ RUN yum -y install --enablerepo=epel \
   python-crypto \
   python-msgpack \
   python-zmq \
-  python-jinja2 \
-  python-requests
+  python-setuptools \
+
+RUN easy_install \
+  jinja2 \
+  requests
