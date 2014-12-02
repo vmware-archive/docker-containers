@@ -5,4 +5,4 @@ MAINTAINER SaltStack, Inc.
 RUN pacman -Syyu --noconfirm
 
 # Install Latest Salt from the Develop Branch
-RUN curl -L http://bootstrap.saltstack.org | sh -s -- -X git develop
+RUN curl -L https://bootstrap.saltstack.org | sh -s -- -X git develop

@@ -7,4 +7,4 @@ RUN apt-get update && \
   apt-get install -y -o DPkg::Options::=--force-confold curl
 
 # Install Latest Salt from the Develop Branch
-RUN curl -L http://bootstrap.saltstack.org | sh -s -- -X git develop
+RUN curl -L https://bootstrap.saltstack.org | sh -s -- -X git develop
