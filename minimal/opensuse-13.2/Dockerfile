@@ -1,4 +1,4 @@
-from opensuse/13.2
+from opensuse:13.2
 MAINTAINER SaltStack, Inc.
 
 # Install the Python repository & Refresh repositories
