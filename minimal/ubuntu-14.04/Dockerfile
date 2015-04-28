@@ -7,6 +7,7 @@ MAINTAINER SaltStack, Inc.
 
 # Enable the necessary sources and upgrade to latest
 RUN echo "deb http://archive.ubuntu.com/ubuntu trusty main universe multiverse restricted" > /etc/apt/sources.list && \
+  echo "deb http://archive.ubuntu.com/ubuntu trusty-security main universe multiverse restricted" >> /etc/apt/sources.list && \
   apt-get update && \
   apt-get upgrade -y -o DPkg::Options::=--force-confold
 
