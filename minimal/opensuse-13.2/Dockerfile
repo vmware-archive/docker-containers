@@ -23,4 +23,5 @@ RUN zypper --non-interactive install --auto-agree-with-licenses \
   python-pycrypto \
   python-pyzmq \
   python-xml \
-  python-requests
+  python-requests \
+  aaa_base
