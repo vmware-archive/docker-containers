@@ -33,6 +33,6 @@ container:
 	$(info CONTAINER_NAME = $(CONTAINER_NAME))
 
 	@echo "Building $(REPO) container..."
-	docker build -no-cache=$(NO_CACHE) -rm=$(RM) -t $(REPO) .
+	docker build --no-cache=$(NO_CACHE) --rm=$(RM) -t $(REPO) .
 	@echo "Done"
 
