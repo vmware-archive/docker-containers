@@ -39,6 +39,11 @@ fi
 
 last_call_ecode=0
 
+if [ -e /pysource ]; then
+    PYTHONPATH=/pysource/
+    export PYTHONPATH
+fi
+
 for call in "$@"; do
     ruller
     echo "Running: $call"
