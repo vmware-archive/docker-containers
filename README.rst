@@ -1,4 +1,4 @@
-salttest-docker
-===============
+SaltStack Golden Images
+=======================
 
-Docker Images To Salt's Test Suite
+Docker Images For Salt's Test Suite

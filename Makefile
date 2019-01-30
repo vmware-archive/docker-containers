@@ -1,21 +1,28 @@
-REPO           =
-REPOBASE       = $(shell basename $(shell dirname `pwd`))
-CONTAINER_NAME = $(shell basename `pwd`)
-RM             = true
-NO_CACHE       = false
+TAG               =
+REPO              =
+SALT_BRANCH       = develop
+REPOBASE          = $(shell basename $(shell dirname `pwd`))
+CONTAINER_NAME    = $(shell basename `pwd`)
+RM                = true
+RM_ARG            =
+NO_CACHE          = false
+NO_CACHE_ARG      =
+BOOTSTRAP_VERSION = 2018.3.3
 
-ifeq ($(shell [ "$(REPOBASE)" = "testing" ] && echo 1 || echo 0), 1)
-	REPO=salttest/$(CONTAINER_NAME)
-else ifeq ($(shell [ "$(REPOBASE)" = "installed" ] && echo 1 || echo 0), 1)
-	REPO=saltstack/$(CONTAINER_NAME)
-else ifeq ($(shell [ "$(REPOBASE)" = "minimal" ] && echo 1 || echo 0), 1)
-	REPO=saltstack/$(CONTAINER_NAME)-minimal
-else ifeq ($(shell [ "$(REPOBASE)" = "transifex" ] && echo 1 || echo 0), 1)
-	CONTAINER_NAME=transifex
-	REPO=saltstack/$(CONTAINER_NAME)
-else ifeq ($(shell [ "$(REPOBASE)" = "lint" ] && echo 1 || echo 0), 1)
-	CONTAINER_NAME=lint
-	REPO=salttest/$(CONTAINER_NAME)
+ifeq ($(shell [ "$(RM)" = "true" ] && echo 1 || echo 0), 1)
+	RM_ARG=--rm
+endif
+
+ifeq ($(shell [ "$(NO_CACHE)" = "true" ] && echo 1 || echo 0), 1)
+	NO_CACHE_ARG=--no-cache
+endif
+
+ifeq ($(shell [ "$(REPOBASE)" = "ci" ] && echo 1 || echo 0), 1)
+	REPO=saltstack/au-$(CONTAINER_NAME):ci-$(SALT_BRANCH)
+	TAG=saltstack/au-$(CONTAINER_NAME):ci-$(SALT_BRANCH)
+else ifeq ($(shell [ "$(REPOBASE)" = "bootstrapped" ] && echo 1 || echo 0), 1)
+	REPO=saltstack/au-$(CONTAINER_NAME):bs
+	TAG=saltstack/au-$(CONTAINER_NAME):bs-$(BOOTSTRAP_VERSION)
 endif
 
 ifndef REPO
@@ -29,10 +36,15 @@ help:
 
 container:
 	$(info           REPO = $(REPO))
+	$(info            TAG = $(TAG))
 	$(info       REPOBASE = $(REPOBASE))
 	$(info CONTAINER_NAME = $(CONTAINER_NAME))
 
 	@echo "Building $(REPO) container..."
-	docker build --no-cache=$(NO_CACHE) --rm=$(RM) -t $(REPO) .
+	@docker build $(NO_CACHE_ARG) $(RM_ARG) \
+		--build-arg FROM_IMAGE=$(CONTAINER_NAME) \
+		--build-arg BOOTSTRAP_VERSION=$(BOOTSTRAP_VERSION) \
+		--build-arg SALT_BRANCH=$(SALT_BRANCH) \
+		-t $(REPO) -t $(TAG) .
 	@echo "Done"
 
