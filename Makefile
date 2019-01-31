@@ -13,6 +13,7 @@ DISTRO_NAME       = $(shell echo $(CONTAINER_NAME) | cut -d - -f 1 )
 DISTRO_VERSION    = $(shell echo $(CONTAINER_NAME) | cut -d - -f 2 )
 FROM_IMAGE        = $(DISTRO_NAME):$(DISTRO_VERSION)
 DOCKER_BUILD_ARGS =
+PY_VERSION        = '2'
 SALT_JENKINS_BRANCH = $(SALT_BRANCH)
 
 ifeq ($(shell [ "$(RM)" = "true" ] && echo 1 || echo 0), 1)
@@ -33,12 +34,13 @@ endif
 
 ifeq ($(shell [ "$(REPOBASE)" = "ci" ] && echo 1 || echo 0), 1)
 	REPO=saltstack/au-$(CONTAINER_NAME):ci-$(SALT_BRANCH)
-	TAG=saltstack/au-$(CONTAINER_NAME):ci-$(SALT_BRANCH)
+	TAG=saltstack/au-$(CONTAINER_NAME):ci-$(SALT_BRANCH)-py${PY_VERSION}
 	FROM_IMAGE=$(CONTAINER_NAME)
 	DOCKER_BUILD_ARGS=--build-arg FROM_IMAGE=$(FROM_IMAGE) \
 		--build-arg BOOTSTRAP_VERSION=$(BOOTSTRAP_VERSION) \
 		--build-arg SALT_BRANCH=$(SALT_BRANCH) \
-		--build-arg SALT_JENKINS_BRANCH=$(SALT_JENKINS_BRANCH)
+		--build-arg SALT_JENKINS_BRANCH=$(SALT_JENKINS_BRANCH) \
+		--build-arg PY_VERSION=$(PY_VERSION)
 else ifeq ($(shell [ "$(REPOBASE)" = "bootstrapped" ] && echo 1 || echo 0), 1)
 	DOCKER_PULL_ARG=--pull
 	REPO=saltstack/au-$(CONTAINER_NAME):bs
