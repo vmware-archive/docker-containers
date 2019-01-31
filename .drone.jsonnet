@@ -39,7 +39,8 @@ local Bootstrapped(distro, version, bootstrap_version='2018.3.3') = {
     else distro + ':' + version
   ),
   local salt_branches = ['2017.7', '2018.3', '2019.2', 'develop'],
-
+  kind: 'pipeline',
+  name: 'build-' + target + '-golden-docker-containers',
   steps: [
     {
       name: 'bootstrap-' + target,
@@ -59,7 +60,7 @@ local Bootstrapped(distro, version, bootstrap_version='2018.3.3') = {
         password: { from_secret: 'password' },
       },
     },
-  ] + [CI(distro, version, salt_branch=salt_branch).steps for salt_branch in salt_branches],
+  ] + [CI(distro, version, salt_branch=salt_branch).steps[0] for salt_branch in salt_branches],
 };
 
 local distros = [
@@ -78,11 +79,8 @@ local distros = [
 
 
 [
-  {
-    kind: 'pipeline',
-    name: 'build-golden-docker-containers',
-    steps: [Bootstrapped(distro.name, distro.version).steps for distro in distros],
-  },
+  Bootstrapped(distro.name, distro.version)
+  for distro in distros
 ] + [
   {
     kind: 'secret',
