@@ -1,7 +1,7 @@
 ---
 {
    "kind": "pipeline",
-   "name": "build-centos-6-golden-docker-containers",
+   "name": "au-centos-6",
    "steps": [
       {
          "image": "plugins/docker",
@@ -138,7 +138,7 @@
 ---
 {
    "kind": "pipeline",
-   "name": "build-centos-7-golden-docker-containers",
+   "name": "au-centos-7",
    "steps": [
       {
          "image": "plugins/docker",
@@ -275,7 +275,7 @@
 ---
 {
    "kind": "pipeline",
-   "name": "build-debian-8-golden-docker-containers",
+   "name": "au-debian-8",
    "steps": [
       {
          "image": "plugins/docker",
@@ -412,7 +412,7 @@
 ---
 {
    "kind": "pipeline",
-   "name": "build-debian-9-golden-docker-containers",
+   "name": "au-debian-9",
    "steps": [
       {
          "image": "plugins/docker",
@@ -549,7 +549,7 @@
 ---
 {
    "kind": "pipeline",
-   "name": "build-fedora-28-golden-docker-containers",
+   "name": "au-fedora-28",
    "steps": [
       {
          "image": "plugins/docker",
@@ -686,7 +686,7 @@
 ---
 {
    "kind": "pipeline",
-   "name": "build-fedora-29-golden-docker-containers",
+   "name": "au-fedora-29",
    "steps": [
       {
          "image": "plugins/docker",
@@ -823,7 +823,7 @@
 ---
 {
    "kind": "pipeline",
-   "name": "build-opensuse-15.0-golden-docker-containers",
+   "name": "au-opensuse-15.0",
    "steps": [
       {
          "image": "plugins/docker",
@@ -960,7 +960,7 @@
 ---
 {
    "kind": "pipeline",
-   "name": "build-opensuse-42.3-golden-docker-containers",
+   "name": "au-opensuse-42.3",
    "steps": [
       {
          "image": "plugins/docker",
@@ -1097,7 +1097,7 @@
 ---
 {
    "kind": "pipeline",
-   "name": "build-ubuntu-14.04-golden-docker-containers",
+   "name": "au-ubuntu-14.04",
    "steps": [
       {
          "image": "plugins/docker",
@@ -1234,7 +1234,7 @@
 ---
 {
    "kind": "pipeline",
-   "name": "build-ubuntu-16.04-golden-docker-containers",
+   "name": "au-ubuntu-16.04",
    "steps": [
       {
          "image": "plugins/docker",
@@ -1371,7 +1371,7 @@
 ---
 {
    "kind": "pipeline",
-   "name": "build-ubuntu-18.04-golden-docker-containers",
+   "name": "au-ubuntu-18.04",
    "steps": [
       {
          "image": "plugins/docker",
@@ -1515,6 +1515,6 @@
 }
 ---
 kind: signature
-hmac: 8d83dfdddfa4037ad250dca9e89e4aeb68f2c8d0ac019bbe6390551e6f041169
+hmac: f24b59ec56b87f9225dcc470003f9dc969c870503f1485f0f722ee7d38b637da
 
 ...

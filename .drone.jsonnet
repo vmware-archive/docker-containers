@@ -42,7 +42,7 @@ local Bootstrapped(distro, version, bootstrap_version='2018.3.3') = {
   local salt_branches = ['2017.7', '2018.3', '2019.2', 'develop'],
 
   kind: 'pipeline',
-  name: 'build-' + target + '-golden-docker-containers',
+  name: 'au-' + target,
   steps: [
     {
       name: target + ':' + docker_tag,
