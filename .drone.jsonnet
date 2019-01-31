@@ -80,8 +80,11 @@ local distros = [
 
 
 [
-  Bootstrapped(distro.name, distro.version)
-  for distro in distros
+  {
+    kind: 'pipeline',
+    name: 'build-golden-docker-containers',
+    steps: [Bootstrapped(distro.name, distro.version).steps for distro in distros],
+  },
 ] + [
   {
     kind: 'secret',
