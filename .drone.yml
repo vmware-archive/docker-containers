@@ -30,15 +30,14 @@
             "centos-6:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "centos-6:ci-2017.7-py2",
+         "name": "centos-6:ci-2017.7",
          "settings": {
             "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=centos-6",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2017.7",
-               "SALT_JENKINS_BRANCH=2017.7",
-               "PY_VERSION=2"
+               "SALT_JENKINS_BRANCH=2017.7"
             ],
             "dockerfile": "ci/centos-6/Dockerfile",
             "password": {
@@ -46,7 +45,7 @@
             },
             "repo": "saltstack/au-centos-6",
             "tags": [
-               "ci-2017.7-py2"
+               "ci-2017.7"
             ],
             "username": {
                "from_secret": "username"
@@ -58,15 +57,14 @@
             "centos-6:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "centos-6:ci-2018.3-py2",
+         "name": "centos-6:ci-2018.3",
          "settings": {
             "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=centos-6",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2018.3",
-               "SALT_JENKINS_BRANCH=2018.3",
-               "PY_VERSION=2"
+               "SALT_JENKINS_BRANCH=2018.3"
             ],
             "dockerfile": "ci/centos-6/Dockerfile",
             "password": {
@@ -74,7 +72,7 @@
             },
             "repo": "saltstack/au-centos-6",
             "tags": [
-               "ci-2018.3-py2"
+               "ci-2018.3"
             ],
             "username": {
                "from_secret": "username"
@@ -86,15 +84,14 @@
             "centos-6:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "centos-6:ci-2019.2-py2",
+         "name": "centos-6:ci-2019.2",
          "settings": {
             "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=centos-6",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2019.2",
-               "SALT_JENKINS_BRANCH=2019.2",
-               "PY_VERSION=2"
+               "SALT_JENKINS_BRANCH=2019.2"
             ],
             "dockerfile": "ci/centos-6/Dockerfile",
             "password": {
@@ -102,7 +99,7 @@
             },
             "repo": "saltstack/au-centos-6",
             "tags": [
-               "ci-2019.2-py2"
+               "ci-2019.2"
             ],
             "username": {
                "from_secret": "username"
@@ -114,15 +111,14 @@
             "centos-6:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "centos-6:ci-develop-py2",
+         "name": "centos-6:ci-develop",
          "settings": {
             "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=centos-6",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=develop",
-               "SALT_JENKINS_BRANCH=master",
-               "PY_VERSION=2"
+               "SALT_JENKINS_BRANCH=master"
             ],
             "dockerfile": "ci/centos-6/Dockerfile",
             "password": {
@@ -130,7 +126,7 @@
             },
             "repo": "saltstack/au-centos-6",
             "tags": [
-               "ci-develop-py2"
+               "ci-develop"
             ],
             "username": {
                "from_secret": "username"
@@ -171,15 +167,14 @@
             "centos-7:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "centos-7:ci-2017.7-py2",
+         "name": "centos-7:ci-2017.7",
          "settings": {
             "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=centos-7",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2017.7",
-               "SALT_JENKINS_BRANCH=2017.7",
-               "PY_VERSION=2"
+               "SALT_JENKINS_BRANCH=2017.7"
             ],
             "dockerfile": "ci/centos-7/Dockerfile",
             "password": {
@@ -187,7 +182,7 @@
             },
             "repo": "saltstack/au-centos-7",
             "tags": [
-               "ci-2017.7-py2"
+               "ci-2017.7"
             ],
             "username": {
                "from_secret": "username"
@@ -199,43 +194,14 @@
             "centos-7:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "centos-7:ci-2017.7-py3",
-         "settings": {
-            "auto_tag": false,
-            "build_args": [
-               "FROM_IMAGE=centos-7",
-               "BOOTSTRAP_VERSION=2018.3.3",
-               "SALT_BRANCH=2017.7",
-               "SALT_JENKINS_BRANCH=2017.7",
-               "PY_VERSION=3"
-            ],
-            "dockerfile": "ci/centos-7/Dockerfile",
-            "password": {
-               "from_secret": "password"
-            },
-            "repo": "saltstack/au-centos-7",
-            "tags": [
-               "ci-2017.7-py3"
-            ],
-            "username": {
-               "from_secret": "username"
-            }
-         }
-      },
-      {
-         "depends_on": [
-            "centos-7:bs-2018.3.3"
-         ],
-         "image": "plugins/docker",
-         "name": "centos-7:ci-2018.3-py2",
+         "name": "centos-7:ci-2018.3",
          "settings": {
             "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=centos-7",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2018.3",
-               "SALT_JENKINS_BRANCH=2018.3",
-               "PY_VERSION=2"
+               "SALT_JENKINS_BRANCH=2018.3"
             ],
             "dockerfile": "ci/centos-7/Dockerfile",
             "password": {
@@ -243,7 +209,7 @@
             },
             "repo": "saltstack/au-centos-7",
             "tags": [
-               "ci-2018.3-py2"
+               "ci-2018.3"
             ],
             "username": {
                "from_secret": "username"
@@ -255,43 +221,14 @@
             "centos-7:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "centos-7:ci-2018.3-py3",
-         "settings": {
-            "auto_tag": false,
-            "build_args": [
-               "FROM_IMAGE=centos-7",
-               "BOOTSTRAP_VERSION=2018.3.3",
-               "SALT_BRANCH=2018.3",
-               "SALT_JENKINS_BRANCH=2018.3",
-               "PY_VERSION=3"
-            ],
-            "dockerfile": "ci/centos-7/Dockerfile",
-            "password": {
-               "from_secret": "password"
-            },
-            "repo": "saltstack/au-centos-7",
-            "tags": [
-               "ci-2018.3-py3"
-            ],
-            "username": {
-               "from_secret": "username"
-            }
-         }
-      },
-      {
-         "depends_on": [
-            "centos-7:bs-2018.3.3"
-         ],
-         "image": "plugins/docker",
-         "name": "centos-7:ci-2019.2-py2",
+         "name": "centos-7:ci-2019.2",
          "settings": {
             "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=centos-7",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2019.2",
-               "SALT_JENKINS_BRANCH=2019.2",
-               "PY_VERSION=2"
+               "SALT_JENKINS_BRANCH=2019.2"
             ],
             "dockerfile": "ci/centos-7/Dockerfile",
             "password": {
@@ -299,7 +236,7 @@
             },
             "repo": "saltstack/au-centos-7",
             "tags": [
-               "ci-2019.2-py2"
+               "ci-2019.2"
             ],
             "username": {
                "from_secret": "username"
@@ -311,43 +248,14 @@
             "centos-7:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "centos-7:ci-2019.2-py3",
-         "settings": {
-            "auto_tag": false,
-            "build_args": [
-               "FROM_IMAGE=centos-7",
-               "BOOTSTRAP_VERSION=2018.3.3",
-               "SALT_BRANCH=2019.2",
-               "SALT_JENKINS_BRANCH=2019.2",
-               "PY_VERSION=3"
-            ],
-            "dockerfile": "ci/centos-7/Dockerfile",
-            "password": {
-               "from_secret": "password"
-            },
-            "repo": "saltstack/au-centos-7",
-            "tags": [
-               "ci-2019.2-py3"
-            ],
-            "username": {
-               "from_secret": "username"
-            }
-         }
-      },
-      {
-         "depends_on": [
-            "centos-7:bs-2018.3.3"
-         ],
-         "image": "plugins/docker",
-         "name": "centos-7:ci-develop-py2",
+         "name": "centos-7:ci-develop",
          "settings": {
             "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=centos-7",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=develop",
-               "SALT_JENKINS_BRANCH=master",
-               "PY_VERSION=2"
+               "SALT_JENKINS_BRANCH=master"
             ],
             "dockerfile": "ci/centos-7/Dockerfile",
             "password": {
@@ -355,35 +263,7 @@
             },
             "repo": "saltstack/au-centos-7",
             "tags": [
-               "ci-develop-py2"
-            ],
-            "username": {
-               "from_secret": "username"
-            }
-         }
-      },
-      {
-         "depends_on": [
-            "centos-7:bs-2018.3.3"
-         ],
-         "image": "plugins/docker",
-         "name": "centos-7:ci-develop-py3",
-         "settings": {
-            "auto_tag": false,
-            "build_args": [
-               "FROM_IMAGE=centos-7",
-               "BOOTSTRAP_VERSION=2018.3.3",
-               "SALT_BRANCH=develop",
-               "SALT_JENKINS_BRANCH=master",
-               "PY_VERSION=3"
-            ],
-            "dockerfile": "ci/centos-7/Dockerfile",
-            "password": {
-               "from_secret": "password"
-            },
-            "repo": "saltstack/au-centos-7",
-            "tags": [
-               "ci-develop-py3"
+               "ci-develop"
             ],
             "username": {
                "from_secret": "username"
@@ -424,15 +304,14 @@
             "debian-8:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "debian-8:ci-2017.7-py2",
+         "name": "debian-8:ci-2017.7",
          "settings": {
             "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=debian-8",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2017.7",
-               "SALT_JENKINS_BRANCH=2017.7",
-               "PY_VERSION=2"
+               "SALT_JENKINS_BRANCH=2017.7"
             ],
             "dockerfile": "ci/debian-8/Dockerfile",
             "password": {
@@ -440,7 +319,7 @@
             },
             "repo": "saltstack/au-debian-8",
             "tags": [
-               "ci-2017.7-py2"
+               "ci-2017.7"
             ],
             "username": {
                "from_secret": "username"
@@ -452,43 +331,14 @@
             "debian-8:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "debian-8:ci-2017.7-py3",
-         "settings": {
-            "auto_tag": false,
-            "build_args": [
-               "FROM_IMAGE=debian-8",
-               "BOOTSTRAP_VERSION=2018.3.3",
-               "SALT_BRANCH=2017.7",
-               "SALT_JENKINS_BRANCH=2017.7",
-               "PY_VERSION=3"
-            ],
-            "dockerfile": "ci/debian-8/Dockerfile",
-            "password": {
-               "from_secret": "password"
-            },
-            "repo": "saltstack/au-debian-8",
-            "tags": [
-               "ci-2017.7-py3"
-            ],
-            "username": {
-               "from_secret": "username"
-            }
-         }
-      },
-      {
-         "depends_on": [
-            "debian-8:bs-2018.3.3"
-         ],
-         "image": "plugins/docker",
-         "name": "debian-8:ci-2018.3-py2",
+         "name": "debian-8:ci-2018.3",
          "settings": {
             "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=debian-8",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2018.3",
-               "SALT_JENKINS_BRANCH=2018.3",
-               "PY_VERSION=2"
+               "SALT_JENKINS_BRANCH=2018.3"
             ],
             "dockerfile": "ci/debian-8/Dockerfile",
             "password": {
@@ -496,7 +346,7 @@
             },
             "repo": "saltstack/au-debian-8",
             "tags": [
-               "ci-2018.3-py2"
+               "ci-2018.3"
             ],
             "username": {
                "from_secret": "username"
@@ -508,43 +358,14 @@
             "debian-8:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "debian-8:ci-2018.3-py3",
-         "settings": {
-            "auto_tag": false,
-            "build_args": [
-               "FROM_IMAGE=debian-8",
-               "BOOTSTRAP_VERSION=2018.3.3",
-               "SALT_BRANCH=2018.3",
-               "SALT_JENKINS_BRANCH=2018.3",
-               "PY_VERSION=3"
-            ],
-            "dockerfile": "ci/debian-8/Dockerfile",
-            "password": {
-               "from_secret": "password"
-            },
-            "repo": "saltstack/au-debian-8",
-            "tags": [
-               "ci-2018.3-py3"
-            ],
-            "username": {
-               "from_secret": "username"
-            }
-         }
-      },
-      {
-         "depends_on": [
-            "debian-8:bs-2018.3.3"
-         ],
-         "image": "plugins/docker",
-         "name": "debian-8:ci-2019.2-py2",
+         "name": "debian-8:ci-2019.2",
          "settings": {
             "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=debian-8",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2019.2",
-               "SALT_JENKINS_BRANCH=2019.2",
-               "PY_VERSION=2"
+               "SALT_JENKINS_BRANCH=2019.2"
             ],
             "dockerfile": "ci/debian-8/Dockerfile",
             "password": {
@@ -552,7 +373,7 @@
             },
             "repo": "saltstack/au-debian-8",
             "tags": [
-               "ci-2019.2-py2"
+               "ci-2019.2"
             ],
             "username": {
                "from_secret": "username"
@@ -564,43 +385,14 @@
             "debian-8:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "debian-8:ci-2019.2-py3",
-         "settings": {
-            "auto_tag": false,
-            "build_args": [
-               "FROM_IMAGE=debian-8",
-               "BOOTSTRAP_VERSION=2018.3.3",
-               "SALT_BRANCH=2019.2",
-               "SALT_JENKINS_BRANCH=2019.2",
-               "PY_VERSION=3"
-            ],
-            "dockerfile": "ci/debian-8/Dockerfile",
-            "password": {
-               "from_secret": "password"
-            },
-            "repo": "saltstack/au-debian-8",
-            "tags": [
-               "ci-2019.2-py3"
-            ],
-            "username": {
-               "from_secret": "username"
-            }
-         }
-      },
-      {
-         "depends_on": [
-            "debian-8:bs-2018.3.3"
-         ],
-         "image": "plugins/docker",
-         "name": "debian-8:ci-develop-py2",
+         "name": "debian-8:ci-develop",
          "settings": {
             "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=debian-8",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=develop",
-               "SALT_JENKINS_BRANCH=master",
-               "PY_VERSION=2"
+               "SALT_JENKINS_BRANCH=master"
             ],
             "dockerfile": "ci/debian-8/Dockerfile",
             "password": {
@@ -608,35 +400,7 @@
             },
             "repo": "saltstack/au-debian-8",
             "tags": [
-               "ci-develop-py2"
-            ],
-            "username": {
-               "from_secret": "username"
-            }
-         }
-      },
-      {
-         "depends_on": [
-            "debian-8:bs-2018.3.3"
-         ],
-         "image": "plugins/docker",
-         "name": "debian-8:ci-develop-py3",
-         "settings": {
-            "auto_tag": false,
-            "build_args": [
-               "FROM_IMAGE=debian-8",
-               "BOOTSTRAP_VERSION=2018.3.3",
-               "SALT_BRANCH=develop",
-               "SALT_JENKINS_BRANCH=master",
-               "PY_VERSION=3"
-            ],
-            "dockerfile": "ci/debian-8/Dockerfile",
-            "password": {
-               "from_secret": "password"
-            },
-            "repo": "saltstack/au-debian-8",
-            "tags": [
-               "ci-develop-py3"
+               "ci-develop"
             ],
             "username": {
                "from_secret": "username"
@@ -677,15 +441,14 @@
             "debian-9:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "debian-9:ci-2017.7-py2",
+         "name": "debian-9:ci-2017.7",
          "settings": {
             "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=debian-9",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2017.7",
-               "SALT_JENKINS_BRANCH=2017.7",
-               "PY_VERSION=2"
+               "SALT_JENKINS_BRANCH=2017.7"
             ],
             "dockerfile": "ci/debian-9/Dockerfile",
             "password": {
@@ -693,7 +456,7 @@
             },
             "repo": "saltstack/au-debian-9",
             "tags": [
-               "ci-2017.7-py2"
+               "ci-2017.7"
             ],
             "username": {
                "from_secret": "username"
@@ -705,43 +468,14 @@
             "debian-9:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "debian-9:ci-2017.7-py3",
-         "settings": {
-            "auto_tag": false,
-            "build_args": [
-               "FROM_IMAGE=debian-9",
-               "BOOTSTRAP_VERSION=2018.3.3",
-               "SALT_BRANCH=2017.7",
-               "SALT_JENKINS_BRANCH=2017.7",
-               "PY_VERSION=3"
-            ],
-            "dockerfile": "ci/debian-9/Dockerfile",
-            "password": {
-               "from_secret": "password"
-            },
-            "repo": "saltstack/au-debian-9",
-            "tags": [
-               "ci-2017.7-py3"
-            ],
-            "username": {
-               "from_secret": "username"
-            }
-         }
-      },
-      {
-         "depends_on": [
-            "debian-9:bs-2018.3.3"
-         ],
-         "image": "plugins/docker",
-         "name": "debian-9:ci-2018.3-py2",
+         "name": "debian-9:ci-2018.3",
          "settings": {
             "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=debian-9",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2018.3",
-               "SALT_JENKINS_BRANCH=2018.3",
-               "PY_VERSION=2"
+               "SALT_JENKINS_BRANCH=2018.3"
             ],
             "dockerfile": "ci/debian-9/Dockerfile",
             "password": {
@@ -749,7 +483,7 @@
             },
             "repo": "saltstack/au-debian-9",
             "tags": [
-               "ci-2018.3-py2"
+               "ci-2018.3"
             ],
             "username": {
                "from_secret": "username"
@@ -761,43 +495,14 @@
             "debian-9:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "debian-9:ci-2018.3-py3",
-         "settings": {
-            "auto_tag": false,
-            "build_args": [
-               "FROM_IMAGE=debian-9",
-               "BOOTSTRAP_VERSION=2018.3.3",
-               "SALT_BRANCH=2018.3",
-               "SALT_JENKINS_BRANCH=2018.3",
-               "PY_VERSION=3"
-            ],
-            "dockerfile": "ci/debian-9/Dockerfile",
-            "password": {
-               "from_secret": "password"
-            },
-            "repo": "saltstack/au-debian-9",
-            "tags": [
-               "ci-2018.3-py3"
-            ],
-            "username": {
-               "from_secret": "username"
-            }
-         }
-      },
-      {
-         "depends_on": [
-            "debian-9:bs-2018.3.3"
-         ],
-         "image": "plugins/docker",
-         "name": "debian-9:ci-2019.2-py2",
+         "name": "debian-9:ci-2019.2",
          "settings": {
             "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=debian-9",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2019.2",
-               "SALT_JENKINS_BRANCH=2019.2",
-               "PY_VERSION=2"
+               "SALT_JENKINS_BRANCH=2019.2"
             ],
             "dockerfile": "ci/debian-9/Dockerfile",
             "password": {
@@ -805,7 +510,7 @@
             },
             "repo": "saltstack/au-debian-9",
             "tags": [
-               "ci-2019.2-py2"
+               "ci-2019.2"
             ],
             "username": {
                "from_secret": "username"
@@ -817,43 +522,14 @@
             "debian-9:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "debian-9:ci-2019.2-py3",
-         "settings": {
-            "auto_tag": false,
-            "build_args": [
-               "FROM_IMAGE=debian-9",
-               "BOOTSTRAP_VERSION=2018.3.3",
-               "SALT_BRANCH=2019.2",
-               "SALT_JENKINS_BRANCH=2019.2",
-               "PY_VERSION=3"
-            ],
-            "dockerfile": "ci/debian-9/Dockerfile",
-            "password": {
-               "from_secret": "password"
-            },
-            "repo": "saltstack/au-debian-9",
-            "tags": [
-               "ci-2019.2-py3"
-            ],
-            "username": {
-               "from_secret": "username"
-            }
-         }
-      },
-      {
-         "depends_on": [
-            "debian-9:bs-2018.3.3"
-         ],
-         "image": "plugins/docker",
-         "name": "debian-9:ci-develop-py2",
+         "name": "debian-9:ci-develop",
          "settings": {
             "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=debian-9",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=develop",
-               "SALT_JENKINS_BRANCH=master",
-               "PY_VERSION=2"
+               "SALT_JENKINS_BRANCH=master"
             ],
             "dockerfile": "ci/debian-9/Dockerfile",
             "password": {
@@ -861,35 +537,7 @@
             },
             "repo": "saltstack/au-debian-9",
             "tags": [
-               "ci-develop-py2"
-            ],
-            "username": {
-               "from_secret": "username"
-            }
-         }
-      },
-      {
-         "depends_on": [
-            "debian-9:bs-2018.3.3"
-         ],
-         "image": "plugins/docker",
-         "name": "debian-9:ci-develop-py3",
-         "settings": {
-            "auto_tag": false,
-            "build_args": [
-               "FROM_IMAGE=debian-9",
-               "BOOTSTRAP_VERSION=2018.3.3",
-               "SALT_BRANCH=develop",
-               "SALT_JENKINS_BRANCH=master",
-               "PY_VERSION=3"
-            ],
-            "dockerfile": "ci/debian-9/Dockerfile",
-            "password": {
-               "from_secret": "password"
-            },
-            "repo": "saltstack/au-debian-9",
-            "tags": [
-               "ci-develop-py3"
+               "ci-develop"
             ],
             "username": {
                "from_secret": "username"
@@ -930,15 +578,14 @@
             "fedora-28:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "fedora-28:ci-2017.7-py2",
+         "name": "fedora-28:ci-2017.7",
          "settings": {
             "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=fedora-28",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2017.7",
-               "SALT_JENKINS_BRANCH=2017.7",
-               "PY_VERSION=2"
+               "SALT_JENKINS_BRANCH=2017.7"
             ],
             "dockerfile": "ci/fedora-28/Dockerfile",
             "password": {
@@ -946,7 +593,7 @@
             },
             "repo": "saltstack/au-fedora-28",
             "tags": [
-               "ci-2017.7-py2"
+               "ci-2017.7"
             ],
             "username": {
                "from_secret": "username"
@@ -958,43 +605,14 @@
             "fedora-28:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "fedora-28:ci-2017.7-py3",
-         "settings": {
-            "auto_tag": false,
-            "build_args": [
-               "FROM_IMAGE=fedora-28",
-               "BOOTSTRAP_VERSION=2018.3.3",
-               "SALT_BRANCH=2017.7",
-               "SALT_JENKINS_BRANCH=2017.7",
-               "PY_VERSION=3"
-            ],
-            "dockerfile": "ci/fedora-28/Dockerfile",
-            "password": {
-               "from_secret": "password"
-            },
-            "repo": "saltstack/au-fedora-28",
-            "tags": [
-               "ci-2017.7-py3"
-            ],
-            "username": {
-               "from_secret": "username"
-            }
-         }
-      },
-      {
-         "depends_on": [
-            "fedora-28:bs-2018.3.3"
-         ],
-         "image": "plugins/docker",
-         "name": "fedora-28:ci-2018.3-py2",
+         "name": "fedora-28:ci-2018.3",
          "settings": {
             "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=fedora-28",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2018.3",
-               "SALT_JENKINS_BRANCH=2018.3",
-               "PY_VERSION=2"
+               "SALT_JENKINS_BRANCH=2018.3"
             ],
             "dockerfile": "ci/fedora-28/Dockerfile",
             "password": {
@@ -1002,7 +620,7 @@
             },
             "repo": "saltstack/au-fedora-28",
             "tags": [
-               "ci-2018.3-py2"
+               "ci-2018.3"
             ],
             "username": {
                "from_secret": "username"
@@ -1014,43 +632,14 @@
             "fedora-28:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "fedora-28:ci-2018.3-py3",
-         "settings": {
-            "auto_tag": false,
-            "build_args": [
-               "FROM_IMAGE=fedora-28",
-               "BOOTSTRAP_VERSION=2018.3.3",
-               "SALT_BRANCH=2018.3",
-               "SALT_JENKINS_BRANCH=2018.3",
-               "PY_VERSION=3"
-            ],
-            "dockerfile": "ci/fedora-28/Dockerfile",
-            "password": {
-               "from_secret": "password"
-            },
-            "repo": "saltstack/au-fedora-28",
-            "tags": [
-               "ci-2018.3-py3"
-            ],
-            "username": {
-               "from_secret": "username"
-            }
-         }
-      },
-      {
-         "depends_on": [
-            "fedora-28:bs-2018.3.3"
-         ],
-         "image": "plugins/docker",
-         "name": "fedora-28:ci-2019.2-py2",
+         "name": "fedora-28:ci-2019.2",
          "settings": {
             "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=fedora-28",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2019.2",
-               "SALT_JENKINS_BRANCH=2019.2",
-               "PY_VERSION=2"
+               "SALT_JENKINS_BRANCH=2019.2"
             ],
             "dockerfile": "ci/fedora-28/Dockerfile",
             "password": {
@@ -1058,7 +647,7 @@
             },
             "repo": "saltstack/au-fedora-28",
             "tags": [
-               "ci-2019.2-py2"
+               "ci-2019.2"
             ],
             "username": {
                "from_secret": "username"
@@ -1070,43 +659,14 @@
             "fedora-28:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "fedora-28:ci-2019.2-py3",
-         "settings": {
-            "auto_tag": false,
-            "build_args": [
-               "FROM_IMAGE=fedora-28",
-               "BOOTSTRAP_VERSION=2018.3.3",
-               "SALT_BRANCH=2019.2",
-               "SALT_JENKINS_BRANCH=2019.2",
-               "PY_VERSION=3"
-            ],
-            "dockerfile": "ci/fedora-28/Dockerfile",
-            "password": {
-               "from_secret": "password"
-            },
-            "repo": "saltstack/au-fedora-28",
-            "tags": [
-               "ci-2019.2-py3"
-            ],
-            "username": {
-               "from_secret": "username"
-            }
-         }
-      },
-      {
-         "depends_on": [
-            "fedora-28:bs-2018.3.3"
-         ],
-         "image": "plugins/docker",
-         "name": "fedora-28:ci-develop-py2",
+         "name": "fedora-28:ci-develop",
          "settings": {
             "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=fedora-28",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=develop",
-               "SALT_JENKINS_BRANCH=master",
-               "PY_VERSION=2"
+               "SALT_JENKINS_BRANCH=master"
             ],
             "dockerfile": "ci/fedora-28/Dockerfile",
             "password": {
@@ -1114,35 +674,7 @@
             },
             "repo": "saltstack/au-fedora-28",
             "tags": [
-               "ci-develop-py2"
-            ],
-            "username": {
-               "from_secret": "username"
-            }
-         }
-      },
-      {
-         "depends_on": [
-            "fedora-28:bs-2018.3.3"
-         ],
-         "image": "plugins/docker",
-         "name": "fedora-28:ci-develop-py3",
-         "settings": {
-            "auto_tag": false,
-            "build_args": [
-               "FROM_IMAGE=fedora-28",
-               "BOOTSTRAP_VERSION=2018.3.3",
-               "SALT_BRANCH=develop",
-               "SALT_JENKINS_BRANCH=master",
-               "PY_VERSION=3"
-            ],
-            "dockerfile": "ci/fedora-28/Dockerfile",
-            "password": {
-               "from_secret": "password"
-            },
-            "repo": "saltstack/au-fedora-28",
-            "tags": [
-               "ci-develop-py3"
+               "ci-develop"
             ],
             "username": {
                "from_secret": "username"
@@ -1183,15 +715,14 @@
             "fedora-29:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "fedora-29:ci-2017.7-py2",
+         "name": "fedora-29:ci-2017.7",
          "settings": {
             "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=fedora-29",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2017.7",
-               "SALT_JENKINS_BRANCH=2017.7",
-               "PY_VERSION=2"
+               "SALT_JENKINS_BRANCH=2017.7"
             ],
             "dockerfile": "ci/fedora-29/Dockerfile",
             "password": {
@@ -1199,7 +730,7 @@
             },
             "repo": "saltstack/au-fedora-29",
             "tags": [
-               "ci-2017.7-py2"
+               "ci-2017.7"
             ],
             "username": {
                "from_secret": "username"
@@ -1211,43 +742,14 @@
             "fedora-29:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "fedora-29:ci-2017.7-py3",
-         "settings": {
-            "auto_tag": false,
-            "build_args": [
-               "FROM_IMAGE=fedora-29",
-               "BOOTSTRAP_VERSION=2018.3.3",
-               "SALT_BRANCH=2017.7",
-               "SALT_JENKINS_BRANCH=2017.7",
-               "PY_VERSION=3"
-            ],
-            "dockerfile": "ci/fedora-29/Dockerfile",
-            "password": {
-               "from_secret": "password"
-            },
-            "repo": "saltstack/au-fedora-29",
-            "tags": [
-               "ci-2017.7-py3"
-            ],
-            "username": {
-               "from_secret": "username"
-            }
-         }
-      },
-      {
-         "depends_on": [
-            "fedora-29:bs-2018.3.3"
-         ],
-         "image": "plugins/docker",
-         "name": "fedora-29:ci-2018.3-py2",
+         "name": "fedora-29:ci-2018.3",
          "settings": {
             "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=fedora-29",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2018.3",
-               "SALT_JENKINS_BRANCH=2018.3",
-               "PY_VERSION=2"
+               "SALT_JENKINS_BRANCH=2018.3"
             ],
             "dockerfile": "ci/fedora-29/Dockerfile",
             "password": {
@@ -1255,7 +757,7 @@
             },
             "repo": "saltstack/au-fedora-29",
             "tags": [
-               "ci-2018.3-py2"
+               "ci-2018.3"
             ],
             "username": {
                "from_secret": "username"
@@ -1267,43 +769,14 @@
             "fedora-29:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "fedora-29:ci-2018.3-py3",
-         "settings": {
-            "auto_tag": false,
-            "build_args": [
-               "FROM_IMAGE=fedora-29",
-               "BOOTSTRAP_VERSION=2018.3.3",
-               "SALT_BRANCH=2018.3",
-               "SALT_JENKINS_BRANCH=2018.3",
-               "PY_VERSION=3"
-            ],
-            "dockerfile": "ci/fedora-29/Dockerfile",
-            "password": {
-               "from_secret": "password"
-            },
-            "repo": "saltstack/au-fedora-29",
-            "tags": [
-               "ci-2018.3-py3"
-            ],
-            "username": {
-               "from_secret": "username"
-            }
-         }
-      },
-      {
-         "depends_on": [
-            "fedora-29:bs-2018.3.3"
-         ],
-         "image": "plugins/docker",
-         "name": "fedora-29:ci-2019.2-py2",
+         "name": "fedora-29:ci-2019.2",
          "settings": {
             "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=fedora-29",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2019.2",
-               "SALT_JENKINS_BRANCH=2019.2",
-               "PY_VERSION=2"
+               "SALT_JENKINS_BRANCH=2019.2"
             ],
             "dockerfile": "ci/fedora-29/Dockerfile",
             "password": {
@@ -1311,7 +784,7 @@
             },
             "repo": "saltstack/au-fedora-29",
             "tags": [
-               "ci-2019.2-py2"
+               "ci-2019.2"
             ],
             "username": {
                "from_secret": "username"
@@ -1323,43 +796,14 @@
             "fedora-29:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "fedora-29:ci-2019.2-py3",
-         "settings": {
-            "auto_tag": false,
-            "build_args": [
-               "FROM_IMAGE=fedora-29",
-               "BOOTSTRAP_VERSION=2018.3.3",
-               "SALT_BRANCH=2019.2",
-               "SALT_JENKINS_BRANCH=2019.2",
-               "PY_VERSION=3"
-            ],
-            "dockerfile": "ci/fedora-29/Dockerfile",
-            "password": {
-               "from_secret": "password"
-            },
-            "repo": "saltstack/au-fedora-29",
-            "tags": [
-               "ci-2019.2-py3"
-            ],
-            "username": {
-               "from_secret": "username"
-            }
-         }
-      },
-      {
-         "depends_on": [
-            "fedora-29:bs-2018.3.3"
-         ],
-         "image": "plugins/docker",
-         "name": "fedora-29:ci-develop-py2",
+         "name": "fedora-29:ci-develop",
          "settings": {
             "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=fedora-29",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=develop",
-               "SALT_JENKINS_BRANCH=master",
-               "PY_VERSION=2"
+               "SALT_JENKINS_BRANCH=master"
             ],
             "dockerfile": "ci/fedora-29/Dockerfile",
             "password": {
@@ -1367,35 +811,7 @@
             },
             "repo": "saltstack/au-fedora-29",
             "tags": [
-               "ci-develop-py2"
-            ],
-            "username": {
-               "from_secret": "username"
-            }
-         }
-      },
-      {
-         "depends_on": [
-            "fedora-29:bs-2018.3.3"
-         ],
-         "image": "plugins/docker",
-         "name": "fedora-29:ci-develop-py3",
-         "settings": {
-            "auto_tag": false,
-            "build_args": [
-               "FROM_IMAGE=fedora-29",
-               "BOOTSTRAP_VERSION=2018.3.3",
-               "SALT_BRANCH=develop",
-               "SALT_JENKINS_BRANCH=master",
-               "PY_VERSION=3"
-            ],
-            "dockerfile": "ci/fedora-29/Dockerfile",
-            "password": {
-               "from_secret": "password"
-            },
-            "repo": "saltstack/au-fedora-29",
-            "tags": [
-               "ci-develop-py3"
+               "ci-develop"
             ],
             "username": {
                "from_secret": "username"
@@ -1436,15 +852,14 @@
             "opensuse-15.0:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "opensuse-15.0:ci-2017.7-py2",
+         "name": "opensuse-15.0:ci-2017.7",
          "settings": {
             "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=opensuse-15.0",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2017.7",
-               "SALT_JENKINS_BRANCH=2017.7",
-               "PY_VERSION=2"
+               "SALT_JENKINS_BRANCH=2017.7"
             ],
             "dockerfile": "ci/opensuse-15.0/Dockerfile",
             "password": {
@@ -1452,7 +867,7 @@
             },
             "repo": "saltstack/au-opensuse-15.0",
             "tags": [
-               "ci-2017.7-py2"
+               "ci-2017.7"
             ],
             "username": {
                "from_secret": "username"
@@ -1464,43 +879,14 @@
             "opensuse-15.0:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "opensuse-15.0:ci-2017.7-py3",
-         "settings": {
-            "auto_tag": false,
-            "build_args": [
-               "FROM_IMAGE=opensuse-15.0",
-               "BOOTSTRAP_VERSION=2018.3.3",
-               "SALT_BRANCH=2017.7",
-               "SALT_JENKINS_BRANCH=2017.7",
-               "PY_VERSION=3"
-            ],
-            "dockerfile": "ci/opensuse-15.0/Dockerfile",
-            "password": {
-               "from_secret": "password"
-            },
-            "repo": "saltstack/au-opensuse-15.0",
-            "tags": [
-               "ci-2017.7-py3"
-            ],
-            "username": {
-               "from_secret": "username"
-            }
-         }
-      },
-      {
-         "depends_on": [
-            "opensuse-15.0:bs-2018.3.3"
-         ],
-         "image": "plugins/docker",
-         "name": "opensuse-15.0:ci-2018.3-py2",
+         "name": "opensuse-15.0:ci-2018.3",
          "settings": {
             "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=opensuse-15.0",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2018.3",
-               "SALT_JENKINS_BRANCH=2018.3",
-               "PY_VERSION=2"
+               "SALT_JENKINS_BRANCH=2018.3"
             ],
             "dockerfile": "ci/opensuse-15.0/Dockerfile",
             "password": {
@@ -1508,7 +894,7 @@
             },
             "repo": "saltstack/au-opensuse-15.0",
             "tags": [
-               "ci-2018.3-py2"
+               "ci-2018.3"
             ],
             "username": {
                "from_secret": "username"
@@ -1520,43 +906,14 @@
             "opensuse-15.0:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "opensuse-15.0:ci-2018.3-py3",
-         "settings": {
-            "auto_tag": false,
-            "build_args": [
-               "FROM_IMAGE=opensuse-15.0",
-               "BOOTSTRAP_VERSION=2018.3.3",
-               "SALT_BRANCH=2018.3",
-               "SALT_JENKINS_BRANCH=2018.3",
-               "PY_VERSION=3"
-            ],
-            "dockerfile": "ci/opensuse-15.0/Dockerfile",
-            "password": {
-               "from_secret": "password"
-            },
-            "repo": "saltstack/au-opensuse-15.0",
-            "tags": [
-               "ci-2018.3-py3"
-            ],
-            "username": {
-               "from_secret": "username"
-            }
-         }
-      },
-      {
-         "depends_on": [
-            "opensuse-15.0:bs-2018.3.3"
-         ],
-         "image": "plugins/docker",
-         "name": "opensuse-15.0:ci-2019.2-py2",
+         "name": "opensuse-15.0:ci-2019.2",
          "settings": {
             "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=opensuse-15.0",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2019.2",
-               "SALT_JENKINS_BRANCH=2019.2",
-               "PY_VERSION=2"
+               "SALT_JENKINS_BRANCH=2019.2"
             ],
             "dockerfile": "ci/opensuse-15.0/Dockerfile",
             "password": {
@@ -1564,7 +921,7 @@
             },
             "repo": "saltstack/au-opensuse-15.0",
             "tags": [
-               "ci-2019.2-py2"
+               "ci-2019.2"
             ],
             "username": {
                "from_secret": "username"
@@ -1576,43 +933,14 @@
             "opensuse-15.0:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "opensuse-15.0:ci-2019.2-py3",
-         "settings": {
-            "auto_tag": false,
-            "build_args": [
-               "FROM_IMAGE=opensuse-15.0",
-               "BOOTSTRAP_VERSION=2018.3.3",
-               "SALT_BRANCH=2019.2",
-               "SALT_JENKINS_BRANCH=2019.2",
-               "PY_VERSION=3"
-            ],
-            "dockerfile": "ci/opensuse-15.0/Dockerfile",
-            "password": {
-               "from_secret": "password"
-            },
-            "repo": "saltstack/au-opensuse-15.0",
-            "tags": [
-               "ci-2019.2-py3"
-            ],
-            "username": {
-               "from_secret": "username"
-            }
-         }
-      },
-      {
-         "depends_on": [
-            "opensuse-15.0:bs-2018.3.3"
-         ],
-         "image": "plugins/docker",
-         "name": "opensuse-15.0:ci-develop-py2",
+         "name": "opensuse-15.0:ci-develop",
          "settings": {
             "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=opensuse-15.0",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=develop",
-               "SALT_JENKINS_BRANCH=master",
-               "PY_VERSION=2"
+               "SALT_JENKINS_BRANCH=master"
             ],
             "dockerfile": "ci/opensuse-15.0/Dockerfile",
             "password": {
@@ -1620,35 +948,7 @@
             },
             "repo": "saltstack/au-opensuse-15.0",
             "tags": [
-               "ci-develop-py2"
-            ],
-            "username": {
-               "from_secret": "username"
-            }
-         }
-      },
-      {
-         "depends_on": [
-            "opensuse-15.0:bs-2018.3.3"
-         ],
-         "image": "plugins/docker",
-         "name": "opensuse-15.0:ci-develop-py3",
-         "settings": {
-            "auto_tag": false,
-            "build_args": [
-               "FROM_IMAGE=opensuse-15.0",
-               "BOOTSTRAP_VERSION=2018.3.3",
-               "SALT_BRANCH=develop",
-               "SALT_JENKINS_BRANCH=master",
-               "PY_VERSION=3"
-            ],
-            "dockerfile": "ci/opensuse-15.0/Dockerfile",
-            "password": {
-               "from_secret": "password"
-            },
-            "repo": "saltstack/au-opensuse-15.0",
-            "tags": [
-               "ci-develop-py3"
+               "ci-develop"
             ],
             "username": {
                "from_secret": "username"
@@ -1689,15 +989,14 @@
             "opensuse-42.3:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "opensuse-42.3:ci-2017.7-py2",
+         "name": "opensuse-42.3:ci-2017.7",
          "settings": {
             "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=opensuse-42.3",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2017.7",
-               "SALT_JENKINS_BRANCH=2017.7",
-               "PY_VERSION=2"
+               "SALT_JENKINS_BRANCH=2017.7"
             ],
             "dockerfile": "ci/opensuse-42.3/Dockerfile",
             "password": {
@@ -1705,7 +1004,7 @@
             },
             "repo": "saltstack/au-opensuse-42.3",
             "tags": [
-               "ci-2017.7-py2"
+               "ci-2017.7"
             ],
             "username": {
                "from_secret": "username"
@@ -1717,43 +1016,14 @@
             "opensuse-42.3:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "opensuse-42.3:ci-2017.7-py3",
-         "settings": {
-            "auto_tag": false,
-            "build_args": [
-               "FROM_IMAGE=opensuse-42.3",
-               "BOOTSTRAP_VERSION=2018.3.3",
-               "SALT_BRANCH=2017.7",
-               "SALT_JENKINS_BRANCH=2017.7",
-               "PY_VERSION=3"
-            ],
-            "dockerfile": "ci/opensuse-42.3/Dockerfile",
-            "password": {
-               "from_secret": "password"
-            },
-            "repo": "saltstack/au-opensuse-42.3",
-            "tags": [
-               "ci-2017.7-py3"
-            ],
-            "username": {
-               "from_secret": "username"
-            }
-         }
-      },
-      {
-         "depends_on": [
-            "opensuse-42.3:bs-2018.3.3"
-         ],
-         "image": "plugins/docker",
-         "name": "opensuse-42.3:ci-2018.3-py2",
+         "name": "opensuse-42.3:ci-2018.3",
          "settings": {
             "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=opensuse-42.3",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2018.3",
-               "SALT_JENKINS_BRANCH=2018.3",
-               "PY_VERSION=2"
+               "SALT_JENKINS_BRANCH=2018.3"
             ],
             "dockerfile": "ci/opensuse-42.3/Dockerfile",
             "password": {
@@ -1761,7 +1031,7 @@
             },
             "repo": "saltstack/au-opensuse-42.3",
             "tags": [
-               "ci-2018.3-py2"
+               "ci-2018.3"
             ],
             "username": {
                "from_secret": "username"
@@ -1773,43 +1043,14 @@
             "opensuse-42.3:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "opensuse-42.3:ci-2018.3-py3",
-         "settings": {
-            "auto_tag": false,
-            "build_args": [
-               "FROM_IMAGE=opensuse-42.3",
-               "BOOTSTRAP_VERSION=2018.3.3",
-               "SALT_BRANCH=2018.3",
-               "SALT_JENKINS_BRANCH=2018.3",
-               "PY_VERSION=3"
-            ],
-            "dockerfile": "ci/opensuse-42.3/Dockerfile",
-            "password": {
-               "from_secret": "password"
-            },
-            "repo": "saltstack/au-opensuse-42.3",
-            "tags": [
-               "ci-2018.3-py3"
-            ],
-            "username": {
-               "from_secret": "username"
-            }
-         }
-      },
-      {
-         "depends_on": [
-            "opensuse-42.3:bs-2018.3.3"
-         ],
-         "image": "plugins/docker",
-         "name": "opensuse-42.3:ci-2019.2-py2",
+         "name": "opensuse-42.3:ci-2019.2",
          "settings": {
             "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=opensuse-42.3",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2019.2",
-               "SALT_JENKINS_BRANCH=2019.2",
-               "PY_VERSION=2"
+               "SALT_JENKINS_BRANCH=2019.2"
             ],
             "dockerfile": "ci/opensuse-42.3/Dockerfile",
             "password": {
@@ -1817,7 +1058,7 @@
             },
             "repo": "saltstack/au-opensuse-42.3",
             "tags": [
-               "ci-2019.2-py2"
+               "ci-2019.2"
             ],
             "username": {
                "from_secret": "username"
@@ -1829,43 +1070,14 @@
             "opensuse-42.3:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "opensuse-42.3:ci-2019.2-py3",
-         "settings": {
-            "auto_tag": false,
-            "build_args": [
-               "FROM_IMAGE=opensuse-42.3",
-               "BOOTSTRAP_VERSION=2018.3.3",
-               "SALT_BRANCH=2019.2",
-               "SALT_JENKINS_BRANCH=2019.2",
-               "PY_VERSION=3"
-            ],
-            "dockerfile": "ci/opensuse-42.3/Dockerfile",
-            "password": {
-               "from_secret": "password"
-            },
-            "repo": "saltstack/au-opensuse-42.3",
-            "tags": [
-               "ci-2019.2-py3"
-            ],
-            "username": {
-               "from_secret": "username"
-            }
-         }
-      },
-      {
-         "depends_on": [
-            "opensuse-42.3:bs-2018.3.3"
-         ],
-         "image": "plugins/docker",
-         "name": "opensuse-42.3:ci-develop-py2",
+         "name": "opensuse-42.3:ci-develop",
          "settings": {
             "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=opensuse-42.3",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=develop",
-               "SALT_JENKINS_BRANCH=master",
-               "PY_VERSION=2"
+               "SALT_JENKINS_BRANCH=master"
             ],
             "dockerfile": "ci/opensuse-42.3/Dockerfile",
             "password": {
@@ -1873,35 +1085,7 @@
             },
             "repo": "saltstack/au-opensuse-42.3",
             "tags": [
-               "ci-develop-py2"
-            ],
-            "username": {
-               "from_secret": "username"
-            }
-         }
-      },
-      {
-         "depends_on": [
-            "opensuse-42.3:bs-2018.3.3"
-         ],
-         "image": "plugins/docker",
-         "name": "opensuse-42.3:ci-develop-py3",
-         "settings": {
-            "auto_tag": false,
-            "build_args": [
-               "FROM_IMAGE=opensuse-42.3",
-               "BOOTSTRAP_VERSION=2018.3.3",
-               "SALT_BRANCH=develop",
-               "SALT_JENKINS_BRANCH=master",
-               "PY_VERSION=3"
-            ],
-            "dockerfile": "ci/opensuse-42.3/Dockerfile",
-            "password": {
-               "from_secret": "password"
-            },
-            "repo": "saltstack/au-opensuse-42.3",
-            "tags": [
-               "ci-develop-py3"
+               "ci-develop"
             ],
             "username": {
                "from_secret": "username"
@@ -1942,15 +1126,14 @@
             "ubuntu-14.04:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "ubuntu-14.04:ci-2017.7-py2",
+         "name": "ubuntu-14.04:ci-2017.7",
          "settings": {
             "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=ubuntu-14.04",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2017.7",
-               "SALT_JENKINS_BRANCH=2017.7",
-               "PY_VERSION=2"
+               "SALT_JENKINS_BRANCH=2017.7"
             ],
             "dockerfile": "ci/ubuntu-14.04/Dockerfile",
             "password": {
@@ -1958,7 +1141,7 @@
             },
             "repo": "saltstack/au-ubuntu-14.04",
             "tags": [
-               "ci-2017.7-py2"
+               "ci-2017.7"
             ],
             "username": {
                "from_secret": "username"
@@ -1970,15 +1153,14 @@
             "ubuntu-14.04:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "ubuntu-14.04:ci-2018.3-py2",
+         "name": "ubuntu-14.04:ci-2018.3",
          "settings": {
             "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=ubuntu-14.04",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2018.3",
-               "SALT_JENKINS_BRANCH=2018.3",
-               "PY_VERSION=2"
+               "SALT_JENKINS_BRANCH=2018.3"
             ],
             "dockerfile": "ci/ubuntu-14.04/Dockerfile",
             "password": {
@@ -1986,7 +1168,7 @@
             },
             "repo": "saltstack/au-ubuntu-14.04",
             "tags": [
-               "ci-2018.3-py2"
+               "ci-2018.3"
             ],
             "username": {
                "from_secret": "username"
@@ -1998,15 +1180,14 @@
             "ubuntu-14.04:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "ubuntu-14.04:ci-2019.2-py2",
+         "name": "ubuntu-14.04:ci-2019.2",
          "settings": {
             "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=ubuntu-14.04",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2019.2",
-               "SALT_JENKINS_BRANCH=2019.2",
-               "PY_VERSION=2"
+               "SALT_JENKINS_BRANCH=2019.2"
             ],
             "dockerfile": "ci/ubuntu-14.04/Dockerfile",
             "password": {
@@ -2014,7 +1195,7 @@
             },
             "repo": "saltstack/au-ubuntu-14.04",
             "tags": [
-               "ci-2019.2-py2"
+               "ci-2019.2"
             ],
             "username": {
                "from_secret": "username"
@@ -2026,15 +1207,14 @@
             "ubuntu-14.04:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "ubuntu-14.04:ci-develop-py2",
+         "name": "ubuntu-14.04:ci-develop",
          "settings": {
             "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=ubuntu-14.04",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=develop",
-               "SALT_JENKINS_BRANCH=master",
-               "PY_VERSION=2"
+               "SALT_JENKINS_BRANCH=master"
             ],
             "dockerfile": "ci/ubuntu-14.04/Dockerfile",
             "password": {
@@ -2042,7 +1222,7 @@
             },
             "repo": "saltstack/au-ubuntu-14.04",
             "tags": [
-               "ci-develop-py2"
+               "ci-develop"
             ],
             "username": {
                "from_secret": "username"
@@ -2083,15 +1263,14 @@
             "ubuntu-16.04:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "ubuntu-16.04:ci-2017.7-py2",
+         "name": "ubuntu-16.04:ci-2017.7",
          "settings": {
             "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=ubuntu-16.04",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2017.7",
-               "SALT_JENKINS_BRANCH=2017.7",
-               "PY_VERSION=2"
+               "SALT_JENKINS_BRANCH=2017.7"
             ],
             "dockerfile": "ci/ubuntu-16.04/Dockerfile",
             "password": {
@@ -2099,7 +1278,7 @@
             },
             "repo": "saltstack/au-ubuntu-16.04",
             "tags": [
-               "ci-2017.7-py2"
+               "ci-2017.7"
             ],
             "username": {
                "from_secret": "username"
@@ -2111,43 +1290,14 @@
             "ubuntu-16.04:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "ubuntu-16.04:ci-2017.7-py3",
-         "settings": {
-            "auto_tag": false,
-            "build_args": [
-               "FROM_IMAGE=ubuntu-16.04",
-               "BOOTSTRAP_VERSION=2018.3.3",
-               "SALT_BRANCH=2017.7",
-               "SALT_JENKINS_BRANCH=2017.7",
-               "PY_VERSION=3"
-            ],
-            "dockerfile": "ci/ubuntu-16.04/Dockerfile",
-            "password": {
-               "from_secret": "password"
-            },
-            "repo": "saltstack/au-ubuntu-16.04",
-            "tags": [
-               "ci-2017.7-py3"
-            ],
-            "username": {
-               "from_secret": "username"
-            }
-         }
-      },
-      {
-         "depends_on": [
-            "ubuntu-16.04:bs-2018.3.3"
-         ],
-         "image": "plugins/docker",
-         "name": "ubuntu-16.04:ci-2018.3-py2",
+         "name": "ubuntu-16.04:ci-2018.3",
          "settings": {
             "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=ubuntu-16.04",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2018.3",
-               "SALT_JENKINS_BRANCH=2018.3",
-               "PY_VERSION=2"
+               "SALT_JENKINS_BRANCH=2018.3"
             ],
             "dockerfile": "ci/ubuntu-16.04/Dockerfile",
             "password": {
@@ -2155,7 +1305,7 @@
             },
             "repo": "saltstack/au-ubuntu-16.04",
             "tags": [
-               "ci-2018.3-py2"
+               "ci-2018.3"
             ],
             "username": {
                "from_secret": "username"
@@ -2167,43 +1317,14 @@
             "ubuntu-16.04:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "ubuntu-16.04:ci-2018.3-py3",
-         "settings": {
-            "auto_tag": false,
-            "build_args": [
-               "FROM_IMAGE=ubuntu-16.04",
-               "BOOTSTRAP_VERSION=2018.3.3",
-               "SALT_BRANCH=2018.3",
-               "SALT_JENKINS_BRANCH=2018.3",
-               "PY_VERSION=3"
-            ],
-            "dockerfile": "ci/ubuntu-16.04/Dockerfile",
-            "password": {
-               "from_secret": "password"
-            },
-            "repo": "saltstack/au-ubuntu-16.04",
-            "tags": [
-               "ci-2018.3-py3"
-            ],
-            "username": {
-               "from_secret": "username"
-            }
-         }
-      },
-      {
-         "depends_on": [
-            "ubuntu-16.04:bs-2018.3.3"
-         ],
-         "image": "plugins/docker",
-         "name": "ubuntu-16.04:ci-2019.2-py2",
+         "name": "ubuntu-16.04:ci-2019.2",
          "settings": {
             "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=ubuntu-16.04",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2019.2",
-               "SALT_JENKINS_BRANCH=2019.2",
-               "PY_VERSION=2"
+               "SALT_JENKINS_BRANCH=2019.2"
             ],
             "dockerfile": "ci/ubuntu-16.04/Dockerfile",
             "password": {
@@ -2211,7 +1332,7 @@
             },
             "repo": "saltstack/au-ubuntu-16.04",
             "tags": [
-               "ci-2019.2-py2"
+               "ci-2019.2"
             ],
             "username": {
                "from_secret": "username"
@@ -2223,43 +1344,14 @@
             "ubuntu-16.04:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "ubuntu-16.04:ci-2019.2-py3",
-         "settings": {
-            "auto_tag": false,
-            "build_args": [
-               "FROM_IMAGE=ubuntu-16.04",
-               "BOOTSTRAP_VERSION=2018.3.3",
-               "SALT_BRANCH=2019.2",
-               "SALT_JENKINS_BRANCH=2019.2",
-               "PY_VERSION=3"
-            ],
-            "dockerfile": "ci/ubuntu-16.04/Dockerfile",
-            "password": {
-               "from_secret": "password"
-            },
-            "repo": "saltstack/au-ubuntu-16.04",
-            "tags": [
-               "ci-2019.2-py3"
-            ],
-            "username": {
-               "from_secret": "username"
-            }
-         }
-      },
-      {
-         "depends_on": [
-            "ubuntu-16.04:bs-2018.3.3"
-         ],
-         "image": "plugins/docker",
-         "name": "ubuntu-16.04:ci-develop-py2",
+         "name": "ubuntu-16.04:ci-develop",
          "settings": {
             "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=ubuntu-16.04",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=develop",
-               "SALT_JENKINS_BRANCH=master",
-               "PY_VERSION=2"
+               "SALT_JENKINS_BRANCH=master"
             ],
             "dockerfile": "ci/ubuntu-16.04/Dockerfile",
             "password": {
@@ -2267,35 +1359,7 @@
             },
             "repo": "saltstack/au-ubuntu-16.04",
             "tags": [
-               "ci-develop-py2"
-            ],
-            "username": {
-               "from_secret": "username"
-            }
-         }
-      },
-      {
-         "depends_on": [
-            "ubuntu-16.04:bs-2018.3.3"
-         ],
-         "image": "plugins/docker",
-         "name": "ubuntu-16.04:ci-develop-py3",
-         "settings": {
-            "auto_tag": false,
-            "build_args": [
-               "FROM_IMAGE=ubuntu-16.04",
-               "BOOTSTRAP_VERSION=2018.3.3",
-               "SALT_BRANCH=develop",
-               "SALT_JENKINS_BRANCH=master",
-               "PY_VERSION=3"
-            ],
-            "dockerfile": "ci/ubuntu-16.04/Dockerfile",
-            "password": {
-               "from_secret": "password"
-            },
-            "repo": "saltstack/au-ubuntu-16.04",
-            "tags": [
-               "ci-develop-py3"
+               "ci-develop"
             ],
             "username": {
                "from_secret": "username"
@@ -2336,15 +1400,14 @@
             "ubuntu-18.04:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "ubuntu-18.04:ci-2017.7-py2",
+         "name": "ubuntu-18.04:ci-2017.7",
          "settings": {
             "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=ubuntu-18.04",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2017.7",
-               "SALT_JENKINS_BRANCH=2017.7",
-               "PY_VERSION=2"
+               "SALT_JENKINS_BRANCH=2017.7"
             ],
             "dockerfile": "ci/ubuntu-18.04/Dockerfile",
             "password": {
@@ -2352,7 +1415,7 @@
             },
             "repo": "saltstack/au-ubuntu-18.04",
             "tags": [
-               "ci-2017.7-py2"
+               "ci-2017.7"
             ],
             "username": {
                "from_secret": "username"
@@ -2364,43 +1427,14 @@
             "ubuntu-18.04:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "ubuntu-18.04:ci-2017.7-py3",
-         "settings": {
-            "auto_tag": false,
-            "build_args": [
-               "FROM_IMAGE=ubuntu-18.04",
-               "BOOTSTRAP_VERSION=2018.3.3",
-               "SALT_BRANCH=2017.7",
-               "SALT_JENKINS_BRANCH=2017.7",
-               "PY_VERSION=3"
-            ],
-            "dockerfile": "ci/ubuntu-18.04/Dockerfile",
-            "password": {
-               "from_secret": "password"
-            },
-            "repo": "saltstack/au-ubuntu-18.04",
-            "tags": [
-               "ci-2017.7-py3"
-            ],
-            "username": {
-               "from_secret": "username"
-            }
-         }
-      },
-      {
-         "depends_on": [
-            "ubuntu-18.04:bs-2018.3.3"
-         ],
-         "image": "plugins/docker",
-         "name": "ubuntu-18.04:ci-2018.3-py2",
+         "name": "ubuntu-18.04:ci-2018.3",
          "settings": {
             "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=ubuntu-18.04",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2018.3",
-               "SALT_JENKINS_BRANCH=2018.3",
-               "PY_VERSION=2"
+               "SALT_JENKINS_BRANCH=2018.3"
             ],
             "dockerfile": "ci/ubuntu-18.04/Dockerfile",
             "password": {
@@ -2408,7 +1442,7 @@
             },
             "repo": "saltstack/au-ubuntu-18.04",
             "tags": [
-               "ci-2018.3-py2"
+               "ci-2018.3"
             ],
             "username": {
                "from_secret": "username"
@@ -2420,43 +1454,14 @@
             "ubuntu-18.04:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "ubuntu-18.04:ci-2018.3-py3",
-         "settings": {
-            "auto_tag": false,
-            "build_args": [
-               "FROM_IMAGE=ubuntu-18.04",
-               "BOOTSTRAP_VERSION=2018.3.3",
-               "SALT_BRANCH=2018.3",
-               "SALT_JENKINS_BRANCH=2018.3",
-               "PY_VERSION=3"
-            ],
-            "dockerfile": "ci/ubuntu-18.04/Dockerfile",
-            "password": {
-               "from_secret": "password"
-            },
-            "repo": "saltstack/au-ubuntu-18.04",
-            "tags": [
-               "ci-2018.3-py3"
-            ],
-            "username": {
-               "from_secret": "username"
-            }
-         }
-      },
-      {
-         "depends_on": [
-            "ubuntu-18.04:bs-2018.3.3"
-         ],
-         "image": "plugins/docker",
-         "name": "ubuntu-18.04:ci-2019.2-py2",
+         "name": "ubuntu-18.04:ci-2019.2",
          "settings": {
             "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=ubuntu-18.04",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2019.2",
-               "SALT_JENKINS_BRANCH=2019.2",
-               "PY_VERSION=2"
+               "SALT_JENKINS_BRANCH=2019.2"
             ],
             "dockerfile": "ci/ubuntu-18.04/Dockerfile",
             "password": {
@@ -2464,7 +1469,7 @@
             },
             "repo": "saltstack/au-ubuntu-18.04",
             "tags": [
-               "ci-2019.2-py2"
+               "ci-2019.2"
             ],
             "username": {
                "from_secret": "username"
@@ -2476,43 +1481,14 @@
             "ubuntu-18.04:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "ubuntu-18.04:ci-2019.2-py3",
-         "settings": {
-            "auto_tag": false,
-            "build_args": [
-               "FROM_IMAGE=ubuntu-18.04",
-               "BOOTSTRAP_VERSION=2018.3.3",
-               "SALT_BRANCH=2019.2",
-               "SALT_JENKINS_BRANCH=2019.2",
-               "PY_VERSION=3"
-            ],
-            "dockerfile": "ci/ubuntu-18.04/Dockerfile",
-            "password": {
-               "from_secret": "password"
-            },
-            "repo": "saltstack/au-ubuntu-18.04",
-            "tags": [
-               "ci-2019.2-py3"
-            ],
-            "username": {
-               "from_secret": "username"
-            }
-         }
-      },
-      {
-         "depends_on": [
-            "ubuntu-18.04:bs-2018.3.3"
-         ],
-         "image": "plugins/docker",
-         "name": "ubuntu-18.04:ci-develop-py2",
+         "name": "ubuntu-18.04:ci-develop",
          "settings": {
             "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=ubuntu-18.04",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=develop",
-               "SALT_JENKINS_BRANCH=master",
-               "PY_VERSION=2"
+               "SALT_JENKINS_BRANCH=master"
             ],
             "dockerfile": "ci/ubuntu-18.04/Dockerfile",
             "password": {
@@ -2520,35 +1496,7 @@
             },
             "repo": "saltstack/au-ubuntu-18.04",
             "tags": [
-               "ci-develop-py2"
-            ],
-            "username": {
-               "from_secret": "username"
-            }
-         }
-      },
-      {
-         "depends_on": [
-            "ubuntu-18.04:bs-2018.3.3"
-         ],
-         "image": "plugins/docker",
-         "name": "ubuntu-18.04:ci-develop-py3",
-         "settings": {
-            "auto_tag": false,
-            "build_args": [
-               "FROM_IMAGE=ubuntu-18.04",
-               "BOOTSTRAP_VERSION=2018.3.3",
-               "SALT_BRANCH=develop",
-               "SALT_JENKINS_BRANCH=master",
-               "PY_VERSION=3"
-            ],
-            "dockerfile": "ci/ubuntu-18.04/Dockerfile",
-            "password": {
-               "from_secret": "password"
-            },
-            "repo": "saltstack/au-ubuntu-18.04",
-            "tags": [
-               "ci-develop-py3"
+               "ci-develop"
             ],
             "username": {
                "from_secret": "username"
@@ -2567,6 +1515,6 @@
 }
 ---
 kind: signature
-hmac: 561f3657a8b1178cd662057dd2accc3bccfac03d4384709d6ae6b6d9ed9d2512
+hmac: f24b59ec56b87f9225dcc470003f9dc969c870503f1485f0f722ee7d38b637da
 
 ...
