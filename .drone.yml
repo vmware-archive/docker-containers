@@ -1601,4 +1601,8 @@
    },
    "kind": "secret"
 }
+---
+kind: signature
+hmac: fcf4da21449982ed2ac790d8e4d1661bf1ede18d4ae54c1699c5c55585433318
+
 ...
