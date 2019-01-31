@@ -1,10 +1,10 @@
-local CI(distro, version, bootstrap_version='2018.3.3', salt_branch='develop') = {
+local CI(distro, version, bootstrap_version='2018.3.3', salt_branch='develop', py_version='2') = {
   local salt_jenkins_branch = (
     if salt_branch == 'develop' then 'master' else salt_branch
   ),
   local target = distro + '-' + version,
   local repo = 'saltstack/au-' + target,
-  local docker_tag = 'ci-' + salt_branch,
+  local docker_tag = 'ci-' + salt_branch + '-py' + py_version,
 
   kind: 'pipeline',
   name: 'build-' + target + '-ci-' + salt_branch,
@@ -21,6 +21,7 @@ local CI(distro, version, bootstrap_version='2018.3.3', salt_branch='develop') =
           'BOOTSTRAP_VERSION=' + bootstrap_version,
           'SALT_BRANCH=' + salt_branch,
           'SALT_JENKINS_BRANCH=' + salt_jenkins_branch,
+          'PY_VERSION=' + py_version,
         ],
         dockerfile: 'ci/' + target + '/Dockerfile',
         username: { from_secret: 'username' },
@@ -40,6 +41,7 @@ local Bootstrapped(distro, version, bootstrap_version='2018.3.3') = {
   ),
   local docker_tag = 'bs-' + bootstrap_version,
   local salt_branches = ['2017.7', '2018.3', '2019.2', 'develop'],
+  local py_versions = (if std.setInter([target], ['centos-6', 'ubuntu-14.04']) != [] then ['2'] else ['2', '3']),
 
   kind: 'pipeline',
   name: 'au-' + target,
@@ -60,7 +62,11 @@ local Bootstrapped(distro, version, bootstrap_version='2018.3.3') = {
         password: { from_secret: 'password' },
       },
     },
-  ] + [CI(distro, version, salt_branch=salt_branch).steps[0] for salt_branch in salt_branches],
+  ] + [
+    CI(distro, version, salt_branch=salt_branch, py_version=py_version).steps[0]
+    for salt_branch in salt_branches
+    for py_version in py_versions
+  ],
 };
 
 local distros = [

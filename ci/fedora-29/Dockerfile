@@ -7,12 +7,16 @@ MAINTAINER SaltStack, Inc.
 ARG SALT_BRANCH=develop
 ARG SALT_JENKINS_BRANCH=master
 ARG SALT_STATE=git.minimal
+ARG PY_VERSION=2
 
 # Clone the Salt-Jenkins repo on $SALT_BRANCH
-RUN mkdir -p /srv/salt && git clone --branch ${SALT_JENKINS_BRANCH} https://github.com/saltstack/salt-jenkins.git /srv/salt
+RUN mkdir -p /srv/salt /srv/pillar && \
+      git clone --branch ${SALT_JENKINS_BRANCH} https://github.com/saltstack/salt-jenkins.git /srv/salt && \
+      echo -e "base:\n  '*':\n    - python" > /srv/pillar/top.sls && \
+      echo -e "py${PY_VERSION}: true\n" > /srv/pillar/python.sls
 
 # Apply the salt-jenkins states
-RUN salt-call --local state.apply ${SALT_STATE}
+RUN salt-call --local pillar.items && salt-call --local state.apply ${SALT_STATE}
 
 # Cleanup
 RUN rm -rf /tmp/git /tmp/* ~/.cache/pip /var/log/salt/* /srv/salt/* && yum clean all
