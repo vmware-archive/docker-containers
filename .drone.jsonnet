@@ -13,8 +13,10 @@ local CI(distro, version, bootstrap_version='2018.3.3', salt_branch='develop') =
       name: 'build-' + target + '-ci-' + salt_branch,
       image: 'plugins/docker',
       settings: {
+        auto_tag: false,
+        repo: repo,
         tags: [
-          'saltstack/au-' + target + ':ci-' + salt_branch,
+          'ci-' + salt_branch,
         ],
         build_args: [
           'FROM_IMAGE=' + from_image,
@@ -46,10 +48,11 @@ local Bootstrapped(distro, version, bootstrap_version='2018.3.3') = {
       name: 'bootstrap-' + target,
       image: 'plugins/docker',
       settings: {
+        auto_tag: false,
         repo: repo,
         tags: [
-          'saltstack/au-' + target + ':bs',
-          'saltstack/au-' + target + ':bs-' + bootstrap_version,
+          'bs',
+          'bs-' + bootstrap_version,
         ],
         build_args: [
           'FROM_IMAGE=' + from_image,

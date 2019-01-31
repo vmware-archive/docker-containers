@@ -7,6 +7,7 @@
          "image": "plugins/docker",
          "name": "bootstrap-centos-6",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=centos:6",
                "BOOTSTRAP_VERSION=2018.3.3"
@@ -17,8 +18,8 @@
             },
             "repo": "saltstack/au-centos-6",
             "tags": [
-               "saltstack/au-centos-6:bs",
-               "saltstack/au-centos-6:bs-2018.3.3"
+               "bs",
+               "bs-2018.3.3"
             ],
             "username": {
                "from_secret": "username"
@@ -32,6 +33,7 @@
          "image": "plugins/docker",
          "name": "build-centos-6-ci-2017.7",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=saltstack/au-centos-6:bs-2018.3.3",
                "BOOTSTRAP_VERSION=2018.3.3",
@@ -42,8 +44,9 @@
             "password": {
                "from_secret": "password"
             },
+            "repo": "saltstack/au-centos-6",
             "tags": [
-               "saltstack/au-centos-6:ci-2017.7"
+               "ci-2017.7"
             ],
             "username": {
                "from_secret": "username"
@@ -57,6 +60,7 @@
          "image": "plugins/docker",
          "name": "build-centos-6-ci-2018.3",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=saltstack/au-centos-6:bs-2018.3.3",
                "BOOTSTRAP_VERSION=2018.3.3",
@@ -67,8 +71,9 @@
             "password": {
                "from_secret": "password"
             },
+            "repo": "saltstack/au-centos-6",
             "tags": [
-               "saltstack/au-centos-6:ci-2018.3"
+               "ci-2018.3"
             ],
             "username": {
                "from_secret": "username"
@@ -82,6 +87,7 @@
          "image": "plugins/docker",
          "name": "build-centos-6-ci-2019.2",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=saltstack/au-centos-6:bs-2018.3.3",
                "BOOTSTRAP_VERSION=2018.3.3",
@@ -92,8 +98,9 @@
             "password": {
                "from_secret": "password"
             },
+            "repo": "saltstack/au-centos-6",
             "tags": [
-               "saltstack/au-centos-6:ci-2019.2"
+               "ci-2019.2"
             ],
             "username": {
                "from_secret": "username"
@@ -107,6 +114,7 @@
          "image": "plugins/docker",
          "name": "build-centos-6-ci-develop",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=saltstack/au-centos-6:bs-2018.3.3",
                "BOOTSTRAP_VERSION=2018.3.3",
@@ -117,8 +125,9 @@
             "password": {
                "from_secret": "password"
             },
+            "repo": "saltstack/au-centos-6",
             "tags": [
-               "saltstack/au-centos-6:ci-develop"
+               "ci-develop"
             ],
             "username": {
                "from_secret": "username"
@@ -136,6 +145,7 @@
          "image": "plugins/docker",
          "name": "bootstrap-centos-7",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=centos:7",
                "BOOTSTRAP_VERSION=2018.3.3"
@@ -146,8 +156,8 @@
             },
             "repo": "saltstack/au-centos-7",
             "tags": [
-               "saltstack/au-centos-7:bs",
-               "saltstack/au-centos-7:bs-2018.3.3"
+               "bs",
+               "bs-2018.3.3"
             ],
             "username": {
                "from_secret": "username"
@@ -161,6 +171,7 @@
          "image": "plugins/docker",
          "name": "build-centos-7-ci-2017.7",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=saltstack/au-centos-7:bs-2018.3.3",
                "BOOTSTRAP_VERSION=2018.3.3",
@@ -171,8 +182,9 @@
             "password": {
                "from_secret": "password"
             },
+            "repo": "saltstack/au-centos-7",
             "tags": [
-               "saltstack/au-centos-7:ci-2017.7"
+               "ci-2017.7"
             ],
             "username": {
                "from_secret": "username"
@@ -186,6 +198,7 @@
          "image": "plugins/docker",
          "name": "build-centos-7-ci-2018.3",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=saltstack/au-centos-7:bs-2018.3.3",
                "BOOTSTRAP_VERSION=2018.3.3",
@@ -196,8 +209,9 @@
             "password": {
                "from_secret": "password"
             },
+            "repo": "saltstack/au-centos-7",
             "tags": [
-               "saltstack/au-centos-7:ci-2018.3"
+               "ci-2018.3"
             ],
             "username": {
                "from_secret": "username"
@@ -211,6 +225,7 @@
          "image": "plugins/docker",
          "name": "build-centos-7-ci-2019.2",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=saltstack/au-centos-7:bs-2018.3.3",
                "BOOTSTRAP_VERSION=2018.3.3",
@@ -221,8 +236,9 @@
             "password": {
                "from_secret": "password"
             },
+            "repo": "saltstack/au-centos-7",
             "tags": [
-               "saltstack/au-centos-7:ci-2019.2"
+               "ci-2019.2"
             ],
             "username": {
                "from_secret": "username"
@@ -236,6 +252,7 @@
          "image": "plugins/docker",
          "name": "build-centos-7-ci-develop",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=saltstack/au-centos-7:bs-2018.3.3",
                "BOOTSTRAP_VERSION=2018.3.3",
@@ -246,8 +263,9 @@
             "password": {
                "from_secret": "password"
             },
+            "repo": "saltstack/au-centos-7",
             "tags": [
-               "saltstack/au-centos-7:ci-develop"
+               "ci-develop"
             ],
             "username": {
                "from_secret": "username"
@@ -265,6 +283,7 @@
          "image": "plugins/docker",
          "name": "bootstrap-debian-8",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=debian:8",
                "BOOTSTRAP_VERSION=2018.3.3"
@@ -275,8 +294,8 @@
             },
             "repo": "saltstack/au-debian-8",
             "tags": [
-               "saltstack/au-debian-8:bs",
-               "saltstack/au-debian-8:bs-2018.3.3"
+               "bs",
+               "bs-2018.3.3"
             ],
             "username": {
                "from_secret": "username"
@@ -290,6 +309,7 @@
          "image": "plugins/docker",
          "name": "build-debian-8-ci-2017.7",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=saltstack/au-debian-8:bs-2018.3.3",
                "BOOTSTRAP_VERSION=2018.3.3",
@@ -300,8 +320,9 @@
             "password": {
                "from_secret": "password"
             },
+            "repo": "saltstack/au-debian-8",
             "tags": [
-               "saltstack/au-debian-8:ci-2017.7"
+               "ci-2017.7"
             ],
             "username": {
                "from_secret": "username"
@@ -315,6 +336,7 @@
          "image": "plugins/docker",
          "name": "build-debian-8-ci-2018.3",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=saltstack/au-debian-8:bs-2018.3.3",
                "BOOTSTRAP_VERSION=2018.3.3",
@@ -325,8 +347,9 @@
             "password": {
                "from_secret": "password"
             },
+            "repo": "saltstack/au-debian-8",
             "tags": [
-               "saltstack/au-debian-8:ci-2018.3"
+               "ci-2018.3"
             ],
             "username": {
                "from_secret": "username"
@@ -340,6 +363,7 @@
          "image": "plugins/docker",
          "name": "build-debian-8-ci-2019.2",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=saltstack/au-debian-8:bs-2018.3.3",
                "BOOTSTRAP_VERSION=2018.3.3",
@@ -350,8 +374,9 @@
             "password": {
                "from_secret": "password"
             },
+            "repo": "saltstack/au-debian-8",
             "tags": [
-               "saltstack/au-debian-8:ci-2019.2"
+               "ci-2019.2"
             ],
             "username": {
                "from_secret": "username"
@@ -365,6 +390,7 @@
          "image": "plugins/docker",
          "name": "build-debian-8-ci-develop",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=saltstack/au-debian-8:bs-2018.3.3",
                "BOOTSTRAP_VERSION=2018.3.3",
@@ -375,8 +401,9 @@
             "password": {
                "from_secret": "password"
             },
+            "repo": "saltstack/au-debian-8",
             "tags": [
-               "saltstack/au-debian-8:ci-develop"
+               "ci-develop"
             ],
             "username": {
                "from_secret": "username"
@@ -394,6 +421,7 @@
          "image": "plugins/docker",
          "name": "bootstrap-debian-9",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=debian:9",
                "BOOTSTRAP_VERSION=2018.3.3"
@@ -404,8 +432,8 @@
             },
             "repo": "saltstack/au-debian-9",
             "tags": [
-               "saltstack/au-debian-9:bs",
-               "saltstack/au-debian-9:bs-2018.3.3"
+               "bs",
+               "bs-2018.3.3"
             ],
             "username": {
                "from_secret": "username"
@@ -419,6 +447,7 @@
          "image": "plugins/docker",
          "name": "build-debian-9-ci-2017.7",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=saltstack/au-debian-9:bs-2018.3.3",
                "BOOTSTRAP_VERSION=2018.3.3",
@@ -429,8 +458,9 @@
             "password": {
                "from_secret": "password"
             },
+            "repo": "saltstack/au-debian-9",
             "tags": [
-               "saltstack/au-debian-9:ci-2017.7"
+               "ci-2017.7"
             ],
             "username": {
                "from_secret": "username"
@@ -444,6 +474,7 @@
          "image": "plugins/docker",
          "name": "build-debian-9-ci-2018.3",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=saltstack/au-debian-9:bs-2018.3.3",
                "BOOTSTRAP_VERSION=2018.3.3",
@@ -454,8 +485,9 @@
             "password": {
                "from_secret": "password"
             },
+            "repo": "saltstack/au-debian-9",
             "tags": [
-               "saltstack/au-debian-9:ci-2018.3"
+               "ci-2018.3"
             ],
             "username": {
                "from_secret": "username"
@@ -469,6 +501,7 @@
          "image": "plugins/docker",
          "name": "build-debian-9-ci-2019.2",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=saltstack/au-debian-9:bs-2018.3.3",
                "BOOTSTRAP_VERSION=2018.3.3",
@@ -479,8 +512,9 @@
             "password": {
                "from_secret": "password"
             },
+            "repo": "saltstack/au-debian-9",
             "tags": [
-               "saltstack/au-debian-9:ci-2019.2"
+               "ci-2019.2"
             ],
             "username": {
                "from_secret": "username"
@@ -494,6 +528,7 @@
          "image": "plugins/docker",
          "name": "build-debian-9-ci-develop",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=saltstack/au-debian-9:bs-2018.3.3",
                "BOOTSTRAP_VERSION=2018.3.3",
@@ -504,8 +539,9 @@
             "password": {
                "from_secret": "password"
             },
+            "repo": "saltstack/au-debian-9",
             "tags": [
-               "saltstack/au-debian-9:ci-develop"
+               "ci-develop"
             ],
             "username": {
                "from_secret": "username"
@@ -523,6 +559,7 @@
          "image": "plugins/docker",
          "name": "bootstrap-fedora-28",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=fedora:28",
                "BOOTSTRAP_VERSION=2018.3.3"
@@ -533,8 +570,8 @@
             },
             "repo": "saltstack/au-fedora-28",
             "tags": [
-               "saltstack/au-fedora-28:bs",
-               "saltstack/au-fedora-28:bs-2018.3.3"
+               "bs",
+               "bs-2018.3.3"
             ],
             "username": {
                "from_secret": "username"
@@ -548,6 +585,7 @@
          "image": "plugins/docker",
          "name": "build-fedora-28-ci-2017.7",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=saltstack/au-fedora-28:bs-2018.3.3",
                "BOOTSTRAP_VERSION=2018.3.3",
@@ -558,8 +596,9 @@
             "password": {
                "from_secret": "password"
             },
+            "repo": "saltstack/au-fedora-28",
             "tags": [
-               "saltstack/au-fedora-28:ci-2017.7"
+               "ci-2017.7"
             ],
             "username": {
                "from_secret": "username"
@@ -573,6 +612,7 @@
          "image": "plugins/docker",
          "name": "build-fedora-28-ci-2018.3",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=saltstack/au-fedora-28:bs-2018.3.3",
                "BOOTSTRAP_VERSION=2018.3.3",
@@ -583,8 +623,9 @@
             "password": {
                "from_secret": "password"
             },
+            "repo": "saltstack/au-fedora-28",
             "tags": [
-               "saltstack/au-fedora-28:ci-2018.3"
+               "ci-2018.3"
             ],
             "username": {
                "from_secret": "username"
@@ -598,6 +639,7 @@
          "image": "plugins/docker",
          "name": "build-fedora-28-ci-2019.2",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=saltstack/au-fedora-28:bs-2018.3.3",
                "BOOTSTRAP_VERSION=2018.3.3",
@@ -608,8 +650,9 @@
             "password": {
                "from_secret": "password"
             },
+            "repo": "saltstack/au-fedora-28",
             "tags": [
-               "saltstack/au-fedora-28:ci-2019.2"
+               "ci-2019.2"
             ],
             "username": {
                "from_secret": "username"
@@ -623,6 +666,7 @@
          "image": "plugins/docker",
          "name": "build-fedora-28-ci-develop",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=saltstack/au-fedora-28:bs-2018.3.3",
                "BOOTSTRAP_VERSION=2018.3.3",
@@ -633,8 +677,9 @@
             "password": {
                "from_secret": "password"
             },
+            "repo": "saltstack/au-fedora-28",
             "tags": [
-               "saltstack/au-fedora-28:ci-develop"
+               "ci-develop"
             ],
             "username": {
                "from_secret": "username"
@@ -652,6 +697,7 @@
          "image": "plugins/docker",
          "name": "bootstrap-fedora-29",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=fedora:29",
                "BOOTSTRAP_VERSION=2018.3.3"
@@ -662,8 +708,8 @@
             },
             "repo": "saltstack/au-fedora-29",
             "tags": [
-               "saltstack/au-fedora-29:bs",
-               "saltstack/au-fedora-29:bs-2018.3.3"
+               "bs",
+               "bs-2018.3.3"
             ],
             "username": {
                "from_secret": "username"
@@ -677,6 +723,7 @@
          "image": "plugins/docker",
          "name": "build-fedora-29-ci-2017.7",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=saltstack/au-fedora-29:bs-2018.3.3",
                "BOOTSTRAP_VERSION=2018.3.3",
@@ -687,8 +734,9 @@
             "password": {
                "from_secret": "password"
             },
+            "repo": "saltstack/au-fedora-29",
             "tags": [
-               "saltstack/au-fedora-29:ci-2017.7"
+               "ci-2017.7"
             ],
             "username": {
                "from_secret": "username"
@@ -702,6 +750,7 @@
          "image": "plugins/docker",
          "name": "build-fedora-29-ci-2018.3",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=saltstack/au-fedora-29:bs-2018.3.3",
                "BOOTSTRAP_VERSION=2018.3.3",
@@ -712,8 +761,9 @@
             "password": {
                "from_secret": "password"
             },
+            "repo": "saltstack/au-fedora-29",
             "tags": [
-               "saltstack/au-fedora-29:ci-2018.3"
+               "ci-2018.3"
             ],
             "username": {
                "from_secret": "username"
@@ -727,6 +777,7 @@
          "image": "plugins/docker",
          "name": "build-fedora-29-ci-2019.2",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=saltstack/au-fedora-29:bs-2018.3.3",
                "BOOTSTRAP_VERSION=2018.3.3",
@@ -737,8 +788,9 @@
             "password": {
                "from_secret": "password"
             },
+            "repo": "saltstack/au-fedora-29",
             "tags": [
-               "saltstack/au-fedora-29:ci-2019.2"
+               "ci-2019.2"
             ],
             "username": {
                "from_secret": "username"
@@ -752,6 +804,7 @@
          "image": "plugins/docker",
          "name": "build-fedora-29-ci-develop",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=saltstack/au-fedora-29:bs-2018.3.3",
                "BOOTSTRAP_VERSION=2018.3.3",
@@ -762,8 +815,9 @@
             "password": {
                "from_secret": "password"
             },
+            "repo": "saltstack/au-fedora-29",
             "tags": [
-               "saltstack/au-fedora-29:ci-develop"
+               "ci-develop"
             ],
             "username": {
                "from_secret": "username"
@@ -781,6 +835,7 @@
          "image": "plugins/docker",
          "name": "bootstrap-opensuse-15.0",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=opensuse/leap:15.0",
                "BOOTSTRAP_VERSION=2018.3.3"
@@ -791,8 +846,8 @@
             },
             "repo": "saltstack/au-opensuse-15.0",
             "tags": [
-               "saltstack/au-opensuse-15.0:bs",
-               "saltstack/au-opensuse-15.0:bs-2018.3.3"
+               "bs",
+               "bs-2018.3.3"
             ],
             "username": {
                "from_secret": "username"
@@ -806,6 +861,7 @@
          "image": "plugins/docker",
          "name": "build-opensuse-15.0-ci-2017.7",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=saltstack/au-opensuse-15.0:bs-2018.3.3",
                "BOOTSTRAP_VERSION=2018.3.3",
@@ -816,8 +872,9 @@
             "password": {
                "from_secret": "password"
             },
+            "repo": "saltstack/au-opensuse-15.0",
             "tags": [
-               "saltstack/au-opensuse-15.0:ci-2017.7"
+               "ci-2017.7"
             ],
             "username": {
                "from_secret": "username"
@@ -831,6 +888,7 @@
          "image": "plugins/docker",
          "name": "build-opensuse-15.0-ci-2018.3",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=saltstack/au-opensuse-15.0:bs-2018.3.3",
                "BOOTSTRAP_VERSION=2018.3.3",
@@ -841,8 +899,9 @@
             "password": {
                "from_secret": "password"
             },
+            "repo": "saltstack/au-opensuse-15.0",
             "tags": [
-               "saltstack/au-opensuse-15.0:ci-2018.3"
+               "ci-2018.3"
             ],
             "username": {
                "from_secret": "username"
@@ -856,6 +915,7 @@
          "image": "plugins/docker",
          "name": "build-opensuse-15.0-ci-2019.2",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=saltstack/au-opensuse-15.0:bs-2018.3.3",
                "BOOTSTRAP_VERSION=2018.3.3",
@@ -866,8 +926,9 @@
             "password": {
                "from_secret": "password"
             },
+            "repo": "saltstack/au-opensuse-15.0",
             "tags": [
-               "saltstack/au-opensuse-15.0:ci-2019.2"
+               "ci-2019.2"
             ],
             "username": {
                "from_secret": "username"
@@ -881,6 +942,7 @@
          "image": "plugins/docker",
          "name": "build-opensuse-15.0-ci-develop",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=saltstack/au-opensuse-15.0:bs-2018.3.3",
                "BOOTSTRAP_VERSION=2018.3.3",
@@ -891,8 +953,9 @@
             "password": {
                "from_secret": "password"
             },
+            "repo": "saltstack/au-opensuse-15.0",
             "tags": [
-               "saltstack/au-opensuse-15.0:ci-develop"
+               "ci-develop"
             ],
             "username": {
                "from_secret": "username"
@@ -910,6 +973,7 @@
          "image": "plugins/docker",
          "name": "bootstrap-opensuse-42.3",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=opensuse/leap:42.3",
                "BOOTSTRAP_VERSION=2018.3.3"
@@ -920,8 +984,8 @@
             },
             "repo": "saltstack/au-opensuse-42.3",
             "tags": [
-               "saltstack/au-opensuse-42.3:bs",
-               "saltstack/au-opensuse-42.3:bs-2018.3.3"
+               "bs",
+               "bs-2018.3.3"
             ],
             "username": {
                "from_secret": "username"
@@ -935,6 +999,7 @@
          "image": "plugins/docker",
          "name": "build-opensuse-42.3-ci-2017.7",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=saltstack/au-opensuse-42.3:bs-2018.3.3",
                "BOOTSTRAP_VERSION=2018.3.3",
@@ -945,8 +1010,9 @@
             "password": {
                "from_secret": "password"
             },
+            "repo": "saltstack/au-opensuse-42.3",
             "tags": [
-               "saltstack/au-opensuse-42.3:ci-2017.7"
+               "ci-2017.7"
             ],
             "username": {
                "from_secret": "username"
@@ -960,6 +1026,7 @@
          "image": "plugins/docker",
          "name": "build-opensuse-42.3-ci-2018.3",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=saltstack/au-opensuse-42.3:bs-2018.3.3",
                "BOOTSTRAP_VERSION=2018.3.3",
@@ -970,8 +1037,9 @@
             "password": {
                "from_secret": "password"
             },
+            "repo": "saltstack/au-opensuse-42.3",
             "tags": [
-               "saltstack/au-opensuse-42.3:ci-2018.3"
+               "ci-2018.3"
             ],
             "username": {
                "from_secret": "username"
@@ -985,6 +1053,7 @@
          "image": "plugins/docker",
          "name": "build-opensuse-42.3-ci-2019.2",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=saltstack/au-opensuse-42.3:bs-2018.3.3",
                "BOOTSTRAP_VERSION=2018.3.3",
@@ -995,8 +1064,9 @@
             "password": {
                "from_secret": "password"
             },
+            "repo": "saltstack/au-opensuse-42.3",
             "tags": [
-               "saltstack/au-opensuse-42.3:ci-2019.2"
+               "ci-2019.2"
             ],
             "username": {
                "from_secret": "username"
@@ -1010,6 +1080,7 @@
          "image": "plugins/docker",
          "name": "build-opensuse-42.3-ci-develop",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=saltstack/au-opensuse-42.3:bs-2018.3.3",
                "BOOTSTRAP_VERSION=2018.3.3",
@@ -1020,8 +1091,9 @@
             "password": {
                "from_secret": "password"
             },
+            "repo": "saltstack/au-opensuse-42.3",
             "tags": [
-               "saltstack/au-opensuse-42.3:ci-develop"
+               "ci-develop"
             ],
             "username": {
                "from_secret": "username"
@@ -1039,6 +1111,7 @@
          "image": "plugins/docker",
          "name": "bootstrap-ubuntu-14.04",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=ubuntu:14.04",
                "BOOTSTRAP_VERSION=2018.3.3"
@@ -1049,8 +1122,8 @@
             },
             "repo": "saltstack/au-ubuntu-14.04",
             "tags": [
-               "saltstack/au-ubuntu-14.04:bs",
-               "saltstack/au-ubuntu-14.04:bs-2018.3.3"
+               "bs",
+               "bs-2018.3.3"
             ],
             "username": {
                "from_secret": "username"
@@ -1064,6 +1137,7 @@
          "image": "plugins/docker",
          "name": "build-ubuntu-14.04-ci-2017.7",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=saltstack/au-ubuntu-14.04:bs-2018.3.3",
                "BOOTSTRAP_VERSION=2018.3.3",
@@ -1074,8 +1148,9 @@
             "password": {
                "from_secret": "password"
             },
+            "repo": "saltstack/au-ubuntu-14.04",
             "tags": [
-               "saltstack/au-ubuntu-14.04:ci-2017.7"
+               "ci-2017.7"
             ],
             "username": {
                "from_secret": "username"
@@ -1089,6 +1164,7 @@
          "image": "plugins/docker",
          "name": "build-ubuntu-14.04-ci-2018.3",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=saltstack/au-ubuntu-14.04:bs-2018.3.3",
                "BOOTSTRAP_VERSION=2018.3.3",
@@ -1099,8 +1175,9 @@
             "password": {
                "from_secret": "password"
             },
+            "repo": "saltstack/au-ubuntu-14.04",
             "tags": [
-               "saltstack/au-ubuntu-14.04:ci-2018.3"
+               "ci-2018.3"
             ],
             "username": {
                "from_secret": "username"
@@ -1114,6 +1191,7 @@
          "image": "plugins/docker",
          "name": "build-ubuntu-14.04-ci-2019.2",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=saltstack/au-ubuntu-14.04:bs-2018.3.3",
                "BOOTSTRAP_VERSION=2018.3.3",
@@ -1124,8 +1202,9 @@
             "password": {
                "from_secret": "password"
             },
+            "repo": "saltstack/au-ubuntu-14.04",
             "tags": [
-               "saltstack/au-ubuntu-14.04:ci-2019.2"
+               "ci-2019.2"
             ],
             "username": {
                "from_secret": "username"
@@ -1139,6 +1218,7 @@
          "image": "plugins/docker",
          "name": "build-ubuntu-14.04-ci-develop",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=saltstack/au-ubuntu-14.04:bs-2018.3.3",
                "BOOTSTRAP_VERSION=2018.3.3",
@@ -1149,8 +1229,9 @@
             "password": {
                "from_secret": "password"
             },
+            "repo": "saltstack/au-ubuntu-14.04",
             "tags": [
-               "saltstack/au-ubuntu-14.04:ci-develop"
+               "ci-develop"
             ],
             "username": {
                "from_secret": "username"
@@ -1168,6 +1249,7 @@
          "image": "plugins/docker",
          "name": "bootstrap-ubuntu-16.04",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=ubuntu:16.04",
                "BOOTSTRAP_VERSION=2018.3.3"
@@ -1178,8 +1260,8 @@
             },
             "repo": "saltstack/au-ubuntu-16.04",
             "tags": [
-               "saltstack/au-ubuntu-16.04:bs",
-               "saltstack/au-ubuntu-16.04:bs-2018.3.3"
+               "bs",
+               "bs-2018.3.3"
             ],
             "username": {
                "from_secret": "username"
@@ -1193,6 +1275,7 @@
          "image": "plugins/docker",
          "name": "build-ubuntu-16.04-ci-2017.7",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=saltstack/au-ubuntu-16.04:bs-2018.3.3",
                "BOOTSTRAP_VERSION=2018.3.3",
@@ -1203,8 +1286,9 @@
             "password": {
                "from_secret": "password"
             },
+            "repo": "saltstack/au-ubuntu-16.04",
             "tags": [
-               "saltstack/au-ubuntu-16.04:ci-2017.7"
+               "ci-2017.7"
             ],
             "username": {
                "from_secret": "username"
@@ -1218,6 +1302,7 @@
          "image": "plugins/docker",
          "name": "build-ubuntu-16.04-ci-2018.3",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=saltstack/au-ubuntu-16.04:bs-2018.3.3",
                "BOOTSTRAP_VERSION=2018.3.3",
@@ -1228,8 +1313,9 @@
             "password": {
                "from_secret": "password"
             },
+            "repo": "saltstack/au-ubuntu-16.04",
             "tags": [
-               "saltstack/au-ubuntu-16.04:ci-2018.3"
+               "ci-2018.3"
             ],
             "username": {
                "from_secret": "username"
@@ -1243,6 +1329,7 @@
          "image": "plugins/docker",
          "name": "build-ubuntu-16.04-ci-2019.2",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=saltstack/au-ubuntu-16.04:bs-2018.3.3",
                "BOOTSTRAP_VERSION=2018.3.3",
@@ -1253,8 +1340,9 @@
             "password": {
                "from_secret": "password"
             },
+            "repo": "saltstack/au-ubuntu-16.04",
             "tags": [
-               "saltstack/au-ubuntu-16.04:ci-2019.2"
+               "ci-2019.2"
             ],
             "username": {
                "from_secret": "username"
@@ -1268,6 +1356,7 @@
          "image": "plugins/docker",
          "name": "build-ubuntu-16.04-ci-develop",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=saltstack/au-ubuntu-16.04:bs-2018.3.3",
                "BOOTSTRAP_VERSION=2018.3.3",
@@ -1278,8 +1367,9 @@
             "password": {
                "from_secret": "password"
             },
+            "repo": "saltstack/au-ubuntu-16.04",
             "tags": [
-               "saltstack/au-ubuntu-16.04:ci-develop"
+               "ci-develop"
             ],
             "username": {
                "from_secret": "username"
@@ -1297,6 +1387,7 @@
          "image": "plugins/docker",
          "name": "bootstrap-ubuntu-18.04",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=ubuntu:18.04",
                "BOOTSTRAP_VERSION=2018.3.3"
@@ -1307,8 +1398,8 @@
             },
             "repo": "saltstack/au-ubuntu-18.04",
             "tags": [
-               "saltstack/au-ubuntu-18.04:bs",
-               "saltstack/au-ubuntu-18.04:bs-2018.3.3"
+               "bs",
+               "bs-2018.3.3"
             ],
             "username": {
                "from_secret": "username"
@@ -1322,6 +1413,7 @@
          "image": "plugins/docker",
          "name": "build-ubuntu-18.04-ci-2017.7",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=saltstack/au-ubuntu-18.04:bs-2018.3.3",
                "BOOTSTRAP_VERSION=2018.3.3",
@@ -1332,8 +1424,9 @@
             "password": {
                "from_secret": "password"
             },
+            "repo": "saltstack/au-ubuntu-18.04",
             "tags": [
-               "saltstack/au-ubuntu-18.04:ci-2017.7"
+               "ci-2017.7"
             ],
             "username": {
                "from_secret": "username"
@@ -1347,6 +1440,7 @@
          "image": "plugins/docker",
          "name": "build-ubuntu-18.04-ci-2018.3",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=saltstack/au-ubuntu-18.04:bs-2018.3.3",
                "BOOTSTRAP_VERSION=2018.3.3",
@@ -1357,8 +1451,9 @@
             "password": {
                "from_secret": "password"
             },
+            "repo": "saltstack/au-ubuntu-18.04",
             "tags": [
-               "saltstack/au-ubuntu-18.04:ci-2018.3"
+               "ci-2018.3"
             ],
             "username": {
                "from_secret": "username"
@@ -1372,6 +1467,7 @@
          "image": "plugins/docker",
          "name": "build-ubuntu-18.04-ci-2019.2",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=saltstack/au-ubuntu-18.04:bs-2018.3.3",
                "BOOTSTRAP_VERSION=2018.3.3",
@@ -1382,8 +1478,9 @@
             "password": {
                "from_secret": "password"
             },
+            "repo": "saltstack/au-ubuntu-18.04",
             "tags": [
-               "saltstack/au-ubuntu-18.04:ci-2019.2"
+               "ci-2019.2"
             ],
             "username": {
                "from_secret": "username"
@@ -1397,6 +1494,7 @@
          "image": "plugins/docker",
          "name": "build-ubuntu-18.04-ci-develop",
          "settings": {
+            "auto_tag": false,
             "build_args": [
                "FROM_IMAGE=saltstack/au-ubuntu-18.04:bs-2018.3.3",
                "BOOTSTRAP_VERSION=2018.3.3",
@@ -1407,8 +1505,9 @@
             "password": {
                "from_secret": "password"
             },
+            "repo": "saltstack/au-ubuntu-18.04",
             "tags": [
-               "saltstack/au-ubuntu-18.04:ci-develop"
+               "ci-develop"
             ],
             "username": {
                "from_secret": "username"
@@ -1427,6 +1526,6 @@
 }
 ---
 kind: signature
-hmac: cd4442292b747399545b659f9cc04dc55165fca058e6a4413381db204ea2f858
+hmac: e74dd14bcbf9dceff05d95d7c06ead6c80b76c1fc1375f939e090f276bc24f81
 
 ...
