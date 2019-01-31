@@ -35,7 +35,7 @@
          "settings": {
             "auto_tag": false,
             "build_args": [
-               "FROM_IMAGE=saltstack/au-centos-6:bs-2018.3.3",
+               "FROM_IMAGE=centos-6",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2017.7",
                "SALT_JENKINS_BRANCH=2017.7"
@@ -62,7 +62,7 @@
          "settings": {
             "auto_tag": false,
             "build_args": [
-               "FROM_IMAGE=saltstack/au-centos-6:bs-2018.3.3",
+               "FROM_IMAGE=centos-6",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2018.3",
                "SALT_JENKINS_BRANCH=2018.3"
@@ -89,7 +89,7 @@
          "settings": {
             "auto_tag": false,
             "build_args": [
-               "FROM_IMAGE=saltstack/au-centos-6:bs-2018.3.3",
+               "FROM_IMAGE=centos-6",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2019.2",
                "SALT_JENKINS_BRANCH=2019.2"
@@ -116,7 +116,7 @@
          "settings": {
             "auto_tag": false,
             "build_args": [
-               "FROM_IMAGE=saltstack/au-centos-6:bs-2018.3.3",
+               "FROM_IMAGE=centos-6",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=develop",
                "SALT_JENKINS_BRANCH=master"
@@ -173,7 +173,7 @@
          "settings": {
             "auto_tag": false,
             "build_args": [
-               "FROM_IMAGE=saltstack/au-centos-7:bs-2018.3.3",
+               "FROM_IMAGE=centos-7",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2017.7",
                "SALT_JENKINS_BRANCH=2017.7"
@@ -200,7 +200,7 @@
          "settings": {
             "auto_tag": false,
             "build_args": [
-               "FROM_IMAGE=saltstack/au-centos-7:bs-2018.3.3",
+               "FROM_IMAGE=centos-7",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2018.3",
                "SALT_JENKINS_BRANCH=2018.3"
@@ -227,7 +227,7 @@
          "settings": {
             "auto_tag": false,
             "build_args": [
-               "FROM_IMAGE=saltstack/au-centos-7:bs-2018.3.3",
+               "FROM_IMAGE=centos-7",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2019.2",
                "SALT_JENKINS_BRANCH=2019.2"
@@ -254,7 +254,7 @@
          "settings": {
             "auto_tag": false,
             "build_args": [
-               "FROM_IMAGE=saltstack/au-centos-7:bs-2018.3.3",
+               "FROM_IMAGE=centos-7",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=develop",
                "SALT_JENKINS_BRANCH=master"
@@ -311,7 +311,7 @@
          "settings": {
             "auto_tag": false,
             "build_args": [
-               "FROM_IMAGE=saltstack/au-debian-8:bs-2018.3.3",
+               "FROM_IMAGE=debian-8",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2017.7",
                "SALT_JENKINS_BRANCH=2017.7"
@@ -338,7 +338,7 @@
          "settings": {
             "auto_tag": false,
             "build_args": [
-               "FROM_IMAGE=saltstack/au-debian-8:bs-2018.3.3",
+               "FROM_IMAGE=debian-8",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2018.3",
                "SALT_JENKINS_BRANCH=2018.3"
@@ -365,7 +365,7 @@
          "settings": {
             "auto_tag": false,
             "build_args": [
-               "FROM_IMAGE=saltstack/au-debian-8:bs-2018.3.3",
+               "FROM_IMAGE=debian-8",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2019.2",
                "SALT_JENKINS_BRANCH=2019.2"
@@ -392,7 +392,7 @@
          "settings": {
             "auto_tag": false,
             "build_args": [
-               "FROM_IMAGE=saltstack/au-debian-8:bs-2018.3.3",
+               "FROM_IMAGE=debian-8",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=develop",
                "SALT_JENKINS_BRANCH=master"
@@ -449,7 +449,7 @@
          "settings": {
             "auto_tag": false,
             "build_args": [
-               "FROM_IMAGE=saltstack/au-debian-9:bs-2018.3.3",
+               "FROM_IMAGE=debian-9",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2017.7",
                "SALT_JENKINS_BRANCH=2017.7"
@@ -476,7 +476,7 @@
          "settings": {
             "auto_tag": false,
             "build_args": [
-               "FROM_IMAGE=saltstack/au-debian-9:bs-2018.3.3",
+               "FROM_IMAGE=debian-9",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2018.3",
                "SALT_JENKINS_BRANCH=2018.3"
@@ -503,7 +503,7 @@
          "settings": {
             "auto_tag": false,
             "build_args": [
-               "FROM_IMAGE=saltstack/au-debian-9:bs-2018.3.3",
+               "FROM_IMAGE=debian-9",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2019.2",
                "SALT_JENKINS_BRANCH=2019.2"
@@ -530,7 +530,7 @@
          "settings": {
             "auto_tag": false,
             "build_args": [
-               "FROM_IMAGE=saltstack/au-debian-9:bs-2018.3.3",
+               "FROM_IMAGE=debian-9",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=develop",
                "SALT_JENKINS_BRANCH=master"
@@ -587,7 +587,7 @@
          "settings": {
             "auto_tag": false,
             "build_args": [
-               "FROM_IMAGE=saltstack/au-fedora-28:bs-2018.3.3",
+               "FROM_IMAGE=fedora-28",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2017.7",
                "SALT_JENKINS_BRANCH=2017.7"
@@ -614,7 +614,7 @@
          "settings": {
             "auto_tag": false,
             "build_args": [
-               "FROM_IMAGE=saltstack/au-fedora-28:bs-2018.3.3",
+               "FROM_IMAGE=fedora-28",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2018.3",
                "SALT_JENKINS_BRANCH=2018.3"
@@ -641,7 +641,7 @@
          "settings": {
             "auto_tag": false,
             "build_args": [
-               "FROM_IMAGE=saltstack/au-fedora-28:bs-2018.3.3",
+               "FROM_IMAGE=fedora-28",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2019.2",
                "SALT_JENKINS_BRANCH=2019.2"
@@ -668,7 +668,7 @@
          "settings": {
             "auto_tag": false,
             "build_args": [
-               "FROM_IMAGE=saltstack/au-fedora-28:bs-2018.3.3",
+               "FROM_IMAGE=fedora-28",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=develop",
                "SALT_JENKINS_BRANCH=master"
@@ -725,7 +725,7 @@
          "settings": {
             "auto_tag": false,
             "build_args": [
-               "FROM_IMAGE=saltstack/au-fedora-29:bs-2018.3.3",
+               "FROM_IMAGE=fedora-29",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2017.7",
                "SALT_JENKINS_BRANCH=2017.7"
@@ -752,7 +752,7 @@
          "settings": {
             "auto_tag": false,
             "build_args": [
-               "FROM_IMAGE=saltstack/au-fedora-29:bs-2018.3.3",
+               "FROM_IMAGE=fedora-29",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2018.3",
                "SALT_JENKINS_BRANCH=2018.3"
@@ -779,7 +779,7 @@
          "settings": {
             "auto_tag": false,
             "build_args": [
-               "FROM_IMAGE=saltstack/au-fedora-29:bs-2018.3.3",
+               "FROM_IMAGE=fedora-29",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2019.2",
                "SALT_JENKINS_BRANCH=2019.2"
@@ -806,7 +806,7 @@
          "settings": {
             "auto_tag": false,
             "build_args": [
-               "FROM_IMAGE=saltstack/au-fedora-29:bs-2018.3.3",
+               "FROM_IMAGE=fedora-29",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=develop",
                "SALT_JENKINS_BRANCH=master"
@@ -863,7 +863,7 @@
          "settings": {
             "auto_tag": false,
             "build_args": [
-               "FROM_IMAGE=saltstack/au-opensuse-15.0:bs-2018.3.3",
+               "FROM_IMAGE=opensuse-15.0",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2017.7",
                "SALT_JENKINS_BRANCH=2017.7"
@@ -890,7 +890,7 @@
          "settings": {
             "auto_tag": false,
             "build_args": [
-               "FROM_IMAGE=saltstack/au-opensuse-15.0:bs-2018.3.3",
+               "FROM_IMAGE=opensuse-15.0",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2018.3",
                "SALT_JENKINS_BRANCH=2018.3"
@@ -917,7 +917,7 @@
          "settings": {
             "auto_tag": false,
             "build_args": [
-               "FROM_IMAGE=saltstack/au-opensuse-15.0:bs-2018.3.3",
+               "FROM_IMAGE=opensuse-15.0",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2019.2",
                "SALT_JENKINS_BRANCH=2019.2"
@@ -944,7 +944,7 @@
          "settings": {
             "auto_tag": false,
             "build_args": [
-               "FROM_IMAGE=saltstack/au-opensuse-15.0:bs-2018.3.3",
+               "FROM_IMAGE=opensuse-15.0",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=develop",
                "SALT_JENKINS_BRANCH=master"
@@ -1001,7 +1001,7 @@
          "settings": {
             "auto_tag": false,
             "build_args": [
-               "FROM_IMAGE=saltstack/au-opensuse-42.3:bs-2018.3.3",
+               "FROM_IMAGE=opensuse-42.3",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2017.7",
                "SALT_JENKINS_BRANCH=2017.7"
@@ -1028,7 +1028,7 @@
          "settings": {
             "auto_tag": false,
             "build_args": [
-               "FROM_IMAGE=saltstack/au-opensuse-42.3:bs-2018.3.3",
+               "FROM_IMAGE=opensuse-42.3",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2018.3",
                "SALT_JENKINS_BRANCH=2018.3"
@@ -1055,7 +1055,7 @@
          "settings": {
             "auto_tag": false,
             "build_args": [
-               "FROM_IMAGE=saltstack/au-opensuse-42.3:bs-2018.3.3",
+               "FROM_IMAGE=opensuse-42.3",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2019.2",
                "SALT_JENKINS_BRANCH=2019.2"
@@ -1082,7 +1082,7 @@
          "settings": {
             "auto_tag": false,
             "build_args": [
-               "FROM_IMAGE=saltstack/au-opensuse-42.3:bs-2018.3.3",
+               "FROM_IMAGE=opensuse-42.3",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=develop",
                "SALT_JENKINS_BRANCH=master"
@@ -1139,7 +1139,7 @@
          "settings": {
             "auto_tag": false,
             "build_args": [
-               "FROM_IMAGE=saltstack/au-ubuntu-14.04:bs-2018.3.3",
+               "FROM_IMAGE=ubuntu-14.04",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2017.7",
                "SALT_JENKINS_BRANCH=2017.7"
@@ -1166,7 +1166,7 @@
          "settings": {
             "auto_tag": false,
             "build_args": [
-               "FROM_IMAGE=saltstack/au-ubuntu-14.04:bs-2018.3.3",
+               "FROM_IMAGE=ubuntu-14.04",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2018.3",
                "SALT_JENKINS_BRANCH=2018.3"
@@ -1193,7 +1193,7 @@
          "settings": {
             "auto_tag": false,
             "build_args": [
-               "FROM_IMAGE=saltstack/au-ubuntu-14.04:bs-2018.3.3",
+               "FROM_IMAGE=ubuntu-14.04",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2019.2",
                "SALT_JENKINS_BRANCH=2019.2"
@@ -1220,7 +1220,7 @@
          "settings": {
             "auto_tag": false,
             "build_args": [
-               "FROM_IMAGE=saltstack/au-ubuntu-14.04:bs-2018.3.3",
+               "FROM_IMAGE=ubuntu-14.04",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=develop",
                "SALT_JENKINS_BRANCH=master"
@@ -1277,7 +1277,7 @@
          "settings": {
             "auto_tag": false,
             "build_args": [
-               "FROM_IMAGE=saltstack/au-ubuntu-16.04:bs-2018.3.3",
+               "FROM_IMAGE=ubuntu-16.04",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2017.7",
                "SALT_JENKINS_BRANCH=2017.7"
@@ -1304,7 +1304,7 @@
          "settings": {
             "auto_tag": false,
             "build_args": [
-               "FROM_IMAGE=saltstack/au-ubuntu-16.04:bs-2018.3.3",
+               "FROM_IMAGE=ubuntu-16.04",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2018.3",
                "SALT_JENKINS_BRANCH=2018.3"
@@ -1331,7 +1331,7 @@
          "settings": {
             "auto_tag": false,
             "build_args": [
-               "FROM_IMAGE=saltstack/au-ubuntu-16.04:bs-2018.3.3",
+               "FROM_IMAGE=ubuntu-16.04",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2019.2",
                "SALT_JENKINS_BRANCH=2019.2"
@@ -1358,7 +1358,7 @@
          "settings": {
             "auto_tag": false,
             "build_args": [
-               "FROM_IMAGE=saltstack/au-ubuntu-16.04:bs-2018.3.3",
+               "FROM_IMAGE=ubuntu-16.04",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=develop",
                "SALT_JENKINS_BRANCH=master"
@@ -1415,7 +1415,7 @@
          "settings": {
             "auto_tag": false,
             "build_args": [
-               "FROM_IMAGE=saltstack/au-ubuntu-18.04:bs-2018.3.3",
+               "FROM_IMAGE=ubuntu-18.04",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2017.7",
                "SALT_JENKINS_BRANCH=2017.7"
@@ -1442,7 +1442,7 @@
          "settings": {
             "auto_tag": false,
             "build_args": [
-               "FROM_IMAGE=saltstack/au-ubuntu-18.04:bs-2018.3.3",
+               "FROM_IMAGE=ubuntu-18.04",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2018.3",
                "SALT_JENKINS_BRANCH=2018.3"
@@ -1469,7 +1469,7 @@
          "settings": {
             "auto_tag": false,
             "build_args": [
-               "FROM_IMAGE=saltstack/au-ubuntu-18.04:bs-2018.3.3",
+               "FROM_IMAGE=ubuntu-18.04",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=2019.2",
                "SALT_JENKINS_BRANCH=2019.2"
@@ -1496,7 +1496,7 @@
          "settings": {
             "auto_tag": false,
             "build_args": [
-               "FROM_IMAGE=saltstack/au-ubuntu-18.04:bs-2018.3.3",
+               "FROM_IMAGE=ubuntu-18.04",
                "BOOTSTRAP_VERSION=2018.3.3",
                "SALT_BRANCH=develop",
                "SALT_JENKINS_BRANCH=master"
@@ -1526,6 +1526,6 @@
 }
 ---
 kind: signature
-hmac: 39c4fcfc71710a10c95687174efe25e7a7979aed39f1f28e565fa12f26c0f408
+hmac: 723ff22d1d6ec580af9d25bb1eb28660c738bb44ab2dfaa09e033991bd9d54e6
 
 ...

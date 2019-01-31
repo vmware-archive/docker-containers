@@ -4,7 +4,6 @@ local CI(distro, version, bootstrap_version='2018.3.3', salt_branch='develop') =
   ),
   local target = distro + '-' + version,
   local repo = 'saltstack/au-' + target,
-  local from_image = repo + ':bs-' + bootstrap_version,
 
   kind: 'pipeline',
   name: 'build-' + target + '-ci-' + salt_branch,
@@ -19,7 +18,7 @@ local CI(distro, version, bootstrap_version='2018.3.3', salt_branch='develop') =
           'ci-' + salt_branch,
         ],
         build_args: [
-          'FROM_IMAGE=' + from_image,
+          'FROM_IMAGE=' + target,
           'BOOTSTRAP_VERSION=' + bootstrap_version,
           'SALT_BRANCH=' + salt_branch,
           'SALT_JENKINS_BRANCH=' + salt_jenkins_branch,
