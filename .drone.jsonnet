@@ -4,19 +4,18 @@ local CI(distro, version, bootstrap_version='2018.3.3', salt_branch='develop') =
   ),
   local target = distro + '-' + version,
   local repo = 'saltstack/au-' + target,
+  local docker_tag = 'ci-' + salt_branch,
 
   kind: 'pipeline',
   name: 'build-' + target + '-ci-' + salt_branch,
   steps: [
     {
-      name: 'build-' + target + '-ci-' + salt_branch,
+      name: target + ':' + docker_tag,
       image: 'plugins/docker',
       settings: {
         auto_tag: false,
         repo: repo,
-        tags: [
-          'ci-' + salt_branch,
-        ],
+        tags: [docker_tag],
         build_args: [
           'FROM_IMAGE=' + target,
           'BOOTSTRAP_VERSION=' + bootstrap_version,
@@ -27,7 +26,7 @@ local CI(distro, version, bootstrap_version='2018.3.3', salt_branch='develop') =
         username: { from_secret: 'username' },
         password: { from_secret: 'password' },
       },
-      depends_on: ['bootstrap-' + target],
+      depends_on: [target + ':bs-' + bootstrap_version],
     },
   ],
 };
@@ -39,20 +38,19 @@ local Bootstrapped(distro, version, bootstrap_version='2018.3.3') = {
     if distro == 'opensuse' then 'opensuse/leap:' + version
     else distro + ':' + version
   ),
+  local docker_tag = 'bs-' + bootstrap_version,
   local salt_branches = ['2017.7', '2018.3', '2019.2', 'develop'],
+
   kind: 'pipeline',
   name: 'build-' + target + '-golden-docker-containers',
   steps: [
     {
-      name: 'bootstrap-' + target,
+      name: target + ':' + docker_tag,
       image: 'plugins/docker',
       settings: {
         auto_tag: false,
         repo: repo,
-        tags: [
-          'bs',
-          'bs-' + bootstrap_version,
-        ],
+        tags: [docker_tag],
         build_args: [
           'FROM_IMAGE=' + from_image,
           'BOOTSTRAP_VERSION=' + bootstrap_version,

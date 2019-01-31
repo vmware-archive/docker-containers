@@ -5,7 +5,7 @@
    "steps": [
       {
          "image": "plugins/docker",
-         "name": "bootstrap-centos-6",
+         "name": "centos-6:bs-2018.3.3",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -18,7 +18,6 @@
             },
             "repo": "saltstack/au-centos-6",
             "tags": [
-               "bs",
                "bs-2018.3.3"
             ],
             "username": {
@@ -28,10 +27,10 @@
       },
       {
          "depends_on": [
-            "bootstrap-centos-6"
+            "centos-6:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "build-centos-6-ci-2017.7",
+         "name": "centos-6:ci-2017.7",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -55,10 +54,10 @@
       },
       {
          "depends_on": [
-            "bootstrap-centos-6"
+            "centos-6:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "build-centos-6-ci-2018.3",
+         "name": "centos-6:ci-2018.3",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -82,10 +81,10 @@
       },
       {
          "depends_on": [
-            "bootstrap-centos-6"
+            "centos-6:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "build-centos-6-ci-2019.2",
+         "name": "centos-6:ci-2019.2",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -109,10 +108,10 @@
       },
       {
          "depends_on": [
-            "bootstrap-centos-6"
+            "centos-6:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "build-centos-6-ci-develop",
+         "name": "centos-6:ci-develop",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -143,7 +142,7 @@
    "steps": [
       {
          "image": "plugins/docker",
-         "name": "bootstrap-centos-7",
+         "name": "centos-7:bs-2018.3.3",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -156,7 +155,6 @@
             },
             "repo": "saltstack/au-centos-7",
             "tags": [
-               "bs",
                "bs-2018.3.3"
             ],
             "username": {
@@ -166,10 +164,10 @@
       },
       {
          "depends_on": [
-            "bootstrap-centos-7"
+            "centos-7:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "build-centos-7-ci-2017.7",
+         "name": "centos-7:ci-2017.7",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -193,10 +191,10 @@
       },
       {
          "depends_on": [
-            "bootstrap-centos-7"
+            "centos-7:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "build-centos-7-ci-2018.3",
+         "name": "centos-7:ci-2018.3",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -220,10 +218,10 @@
       },
       {
          "depends_on": [
-            "bootstrap-centos-7"
+            "centos-7:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "build-centos-7-ci-2019.2",
+         "name": "centos-7:ci-2019.2",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -247,10 +245,10 @@
       },
       {
          "depends_on": [
-            "bootstrap-centos-7"
+            "centos-7:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "build-centos-7-ci-develop",
+         "name": "centos-7:ci-develop",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -281,7 +279,7 @@
    "steps": [
       {
          "image": "plugins/docker",
-         "name": "bootstrap-debian-8",
+         "name": "debian-8:bs-2018.3.3",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -294,7 +292,6 @@
             },
             "repo": "saltstack/au-debian-8",
             "tags": [
-               "bs",
                "bs-2018.3.3"
             ],
             "username": {
@@ -304,10 +301,10 @@
       },
       {
          "depends_on": [
-            "bootstrap-debian-8"
+            "debian-8:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "build-debian-8-ci-2017.7",
+         "name": "debian-8:ci-2017.7",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -331,10 +328,10 @@
       },
       {
          "depends_on": [
-            "bootstrap-debian-8"
+            "debian-8:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "build-debian-8-ci-2018.3",
+         "name": "debian-8:ci-2018.3",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -358,10 +355,10 @@
       },
       {
          "depends_on": [
-            "bootstrap-debian-8"
+            "debian-8:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "build-debian-8-ci-2019.2",
+         "name": "debian-8:ci-2019.2",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -385,10 +382,10 @@
       },
       {
          "depends_on": [
-            "bootstrap-debian-8"
+            "debian-8:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "build-debian-8-ci-develop",
+         "name": "debian-8:ci-develop",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -419,7 +416,7 @@
    "steps": [
       {
          "image": "plugins/docker",
-         "name": "bootstrap-debian-9",
+         "name": "debian-9:bs-2018.3.3",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -432,7 +429,6 @@
             },
             "repo": "saltstack/au-debian-9",
             "tags": [
-               "bs",
                "bs-2018.3.3"
             ],
             "username": {
@@ -442,10 +438,10 @@
       },
       {
          "depends_on": [
-            "bootstrap-debian-9"
+            "debian-9:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "build-debian-9-ci-2017.7",
+         "name": "debian-9:ci-2017.7",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -469,10 +465,10 @@
       },
       {
          "depends_on": [
-            "bootstrap-debian-9"
+            "debian-9:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "build-debian-9-ci-2018.3",
+         "name": "debian-9:ci-2018.3",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -496,10 +492,10 @@
       },
       {
          "depends_on": [
-            "bootstrap-debian-9"
+            "debian-9:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "build-debian-9-ci-2019.2",
+         "name": "debian-9:ci-2019.2",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -523,10 +519,10 @@
       },
       {
          "depends_on": [
-            "bootstrap-debian-9"
+            "debian-9:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "build-debian-9-ci-develop",
+         "name": "debian-9:ci-develop",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -557,7 +553,7 @@
    "steps": [
       {
          "image": "plugins/docker",
-         "name": "bootstrap-fedora-28",
+         "name": "fedora-28:bs-2018.3.3",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -570,7 +566,6 @@
             },
             "repo": "saltstack/au-fedora-28",
             "tags": [
-               "bs",
                "bs-2018.3.3"
             ],
             "username": {
@@ -580,10 +575,10 @@
       },
       {
          "depends_on": [
-            "bootstrap-fedora-28"
+            "fedora-28:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "build-fedora-28-ci-2017.7",
+         "name": "fedora-28:ci-2017.7",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -607,10 +602,10 @@
       },
       {
          "depends_on": [
-            "bootstrap-fedora-28"
+            "fedora-28:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "build-fedora-28-ci-2018.3",
+         "name": "fedora-28:ci-2018.3",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -634,10 +629,10 @@
       },
       {
          "depends_on": [
-            "bootstrap-fedora-28"
+            "fedora-28:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "build-fedora-28-ci-2019.2",
+         "name": "fedora-28:ci-2019.2",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -661,10 +656,10 @@
       },
       {
          "depends_on": [
-            "bootstrap-fedora-28"
+            "fedora-28:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "build-fedora-28-ci-develop",
+         "name": "fedora-28:ci-develop",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -695,7 +690,7 @@
    "steps": [
       {
          "image": "plugins/docker",
-         "name": "bootstrap-fedora-29",
+         "name": "fedora-29:bs-2018.3.3",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -708,7 +703,6 @@
             },
             "repo": "saltstack/au-fedora-29",
             "tags": [
-               "bs",
                "bs-2018.3.3"
             ],
             "username": {
@@ -718,10 +712,10 @@
       },
       {
          "depends_on": [
-            "bootstrap-fedora-29"
+            "fedora-29:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "build-fedora-29-ci-2017.7",
+         "name": "fedora-29:ci-2017.7",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -745,10 +739,10 @@
       },
       {
          "depends_on": [
-            "bootstrap-fedora-29"
+            "fedora-29:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "build-fedora-29-ci-2018.3",
+         "name": "fedora-29:ci-2018.3",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -772,10 +766,10 @@
       },
       {
          "depends_on": [
-            "bootstrap-fedora-29"
+            "fedora-29:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "build-fedora-29-ci-2019.2",
+         "name": "fedora-29:ci-2019.2",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -799,10 +793,10 @@
       },
       {
          "depends_on": [
-            "bootstrap-fedora-29"
+            "fedora-29:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "build-fedora-29-ci-develop",
+         "name": "fedora-29:ci-develop",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -833,7 +827,7 @@
    "steps": [
       {
          "image": "plugins/docker",
-         "name": "bootstrap-opensuse-15.0",
+         "name": "opensuse-15.0:bs-2018.3.3",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -846,7 +840,6 @@
             },
             "repo": "saltstack/au-opensuse-15.0",
             "tags": [
-               "bs",
                "bs-2018.3.3"
             ],
             "username": {
@@ -856,10 +849,10 @@
       },
       {
          "depends_on": [
-            "bootstrap-opensuse-15.0"
+            "opensuse-15.0:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "build-opensuse-15.0-ci-2017.7",
+         "name": "opensuse-15.0:ci-2017.7",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -883,10 +876,10 @@
       },
       {
          "depends_on": [
-            "bootstrap-opensuse-15.0"
+            "opensuse-15.0:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "build-opensuse-15.0-ci-2018.3",
+         "name": "opensuse-15.0:ci-2018.3",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -910,10 +903,10 @@
       },
       {
          "depends_on": [
-            "bootstrap-opensuse-15.0"
+            "opensuse-15.0:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "build-opensuse-15.0-ci-2019.2",
+         "name": "opensuse-15.0:ci-2019.2",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -937,10 +930,10 @@
       },
       {
          "depends_on": [
-            "bootstrap-opensuse-15.0"
+            "opensuse-15.0:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "build-opensuse-15.0-ci-develop",
+         "name": "opensuse-15.0:ci-develop",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -971,7 +964,7 @@
    "steps": [
       {
          "image": "plugins/docker",
-         "name": "bootstrap-opensuse-42.3",
+         "name": "opensuse-42.3:bs-2018.3.3",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -984,7 +977,6 @@
             },
             "repo": "saltstack/au-opensuse-42.3",
             "tags": [
-               "bs",
                "bs-2018.3.3"
             ],
             "username": {
@@ -994,10 +986,10 @@
       },
       {
          "depends_on": [
-            "bootstrap-opensuse-42.3"
+            "opensuse-42.3:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "build-opensuse-42.3-ci-2017.7",
+         "name": "opensuse-42.3:ci-2017.7",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -1021,10 +1013,10 @@
       },
       {
          "depends_on": [
-            "bootstrap-opensuse-42.3"
+            "opensuse-42.3:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "build-opensuse-42.3-ci-2018.3",
+         "name": "opensuse-42.3:ci-2018.3",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -1048,10 +1040,10 @@
       },
       {
          "depends_on": [
-            "bootstrap-opensuse-42.3"
+            "opensuse-42.3:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "build-opensuse-42.3-ci-2019.2",
+         "name": "opensuse-42.3:ci-2019.2",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -1075,10 +1067,10 @@
       },
       {
          "depends_on": [
-            "bootstrap-opensuse-42.3"
+            "opensuse-42.3:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "build-opensuse-42.3-ci-develop",
+         "name": "opensuse-42.3:ci-develop",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -1109,7 +1101,7 @@
    "steps": [
       {
          "image": "plugins/docker",
-         "name": "bootstrap-ubuntu-14.04",
+         "name": "ubuntu-14.04:bs-2018.3.3",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -1122,7 +1114,6 @@
             },
             "repo": "saltstack/au-ubuntu-14.04",
             "tags": [
-               "bs",
                "bs-2018.3.3"
             ],
             "username": {
@@ -1132,10 +1123,10 @@
       },
       {
          "depends_on": [
-            "bootstrap-ubuntu-14.04"
+            "ubuntu-14.04:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "build-ubuntu-14.04-ci-2017.7",
+         "name": "ubuntu-14.04:ci-2017.7",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -1159,10 +1150,10 @@
       },
       {
          "depends_on": [
-            "bootstrap-ubuntu-14.04"
+            "ubuntu-14.04:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "build-ubuntu-14.04-ci-2018.3",
+         "name": "ubuntu-14.04:ci-2018.3",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -1186,10 +1177,10 @@
       },
       {
          "depends_on": [
-            "bootstrap-ubuntu-14.04"
+            "ubuntu-14.04:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "build-ubuntu-14.04-ci-2019.2",
+         "name": "ubuntu-14.04:ci-2019.2",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -1213,10 +1204,10 @@
       },
       {
          "depends_on": [
-            "bootstrap-ubuntu-14.04"
+            "ubuntu-14.04:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "build-ubuntu-14.04-ci-develop",
+         "name": "ubuntu-14.04:ci-develop",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -1247,7 +1238,7 @@
    "steps": [
       {
          "image": "plugins/docker",
-         "name": "bootstrap-ubuntu-16.04",
+         "name": "ubuntu-16.04:bs-2018.3.3",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -1260,7 +1251,6 @@
             },
             "repo": "saltstack/au-ubuntu-16.04",
             "tags": [
-               "bs",
                "bs-2018.3.3"
             ],
             "username": {
@@ -1270,10 +1260,10 @@
       },
       {
          "depends_on": [
-            "bootstrap-ubuntu-16.04"
+            "ubuntu-16.04:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "build-ubuntu-16.04-ci-2017.7",
+         "name": "ubuntu-16.04:ci-2017.7",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -1297,10 +1287,10 @@
       },
       {
          "depends_on": [
-            "bootstrap-ubuntu-16.04"
+            "ubuntu-16.04:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "build-ubuntu-16.04-ci-2018.3",
+         "name": "ubuntu-16.04:ci-2018.3",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -1324,10 +1314,10 @@
       },
       {
          "depends_on": [
-            "bootstrap-ubuntu-16.04"
+            "ubuntu-16.04:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "build-ubuntu-16.04-ci-2019.2",
+         "name": "ubuntu-16.04:ci-2019.2",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -1351,10 +1341,10 @@
       },
       {
          "depends_on": [
-            "bootstrap-ubuntu-16.04"
+            "ubuntu-16.04:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "build-ubuntu-16.04-ci-develop",
+         "name": "ubuntu-16.04:ci-develop",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -1385,7 +1375,7 @@
    "steps": [
       {
          "image": "plugins/docker",
-         "name": "bootstrap-ubuntu-18.04",
+         "name": "ubuntu-18.04:bs-2018.3.3",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -1398,7 +1388,6 @@
             },
             "repo": "saltstack/au-ubuntu-18.04",
             "tags": [
-               "bs",
                "bs-2018.3.3"
             ],
             "username": {
@@ -1408,10 +1397,10 @@
       },
       {
          "depends_on": [
-            "bootstrap-ubuntu-18.04"
+            "ubuntu-18.04:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "build-ubuntu-18.04-ci-2017.7",
+         "name": "ubuntu-18.04:ci-2017.7",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -1435,10 +1424,10 @@
       },
       {
          "depends_on": [
-            "bootstrap-ubuntu-18.04"
+            "ubuntu-18.04:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "build-ubuntu-18.04-ci-2018.3",
+         "name": "ubuntu-18.04:ci-2018.3",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -1462,10 +1451,10 @@
       },
       {
          "depends_on": [
-            "bootstrap-ubuntu-18.04"
+            "ubuntu-18.04:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "build-ubuntu-18.04-ci-2019.2",
+         "name": "ubuntu-18.04:ci-2019.2",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -1489,10 +1478,10 @@
       },
       {
          "depends_on": [
-            "bootstrap-ubuntu-18.04"
+            "ubuntu-18.04:bs-2018.3.3"
          ],
          "image": "plugins/docker",
-         "name": "build-ubuntu-18.04-ci-develop",
+         "name": "ubuntu-18.04:ci-develop",
          "settings": {
             "auto_tag": false,
             "build_args": [
@@ -1526,6 +1515,6 @@
 }
 ---
 kind: signature
-hmac: 723ff22d1d6ec580af9d25bb1eb28660c738bb44ab2dfaa09e033991bd9d54e6
+hmac: 8d83dfdddfa4037ad250dca9e89e4aeb68f2c8d0ac019bbe6390551e6f041169
 
 ...
