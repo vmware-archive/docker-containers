@@ -1519,13 +1519,13 @@
 ---
 {
    "data": {
-      "password": "_3uoXYrfAzFYGMlHbBIFbUAmd8DNtIVw_pFkkOLP4AkEVMZB-b-9uhsW_nbj1I1XXY-qqbTG4w8pbepoQDrHUH_AgnHdSi4=",
-      "username": "abN3l9Tx0zEJkMbqdHmWePr3WEsfEnk4ReTp_LZAnf_ZmJJ1F28SKR8V58dln8wOFg=="
+      "password": "Vcp25vpJHVhRiVF_9SRv2I0sHWAxJlae1tDTDXYzoKnXnxxw_H2Hjj6ZXPGz",
+      "username": "wdocTM4pqjeNWmHMUfu0RTW3UAjLIqUtCckMF9uR_jVh1Qrx4kx7GjphJ42NFXWC"
    },
    "kind": "secret"
 }
 ---
 kind: signature
-hmac: e74dd14bcbf9dceff05d95d7c06ead6c80b76c1fc1375f939e090f276bc24f81
+hmac: 39c4fcfc71710a10c95687174efe25e7a7979aed39f1f28e565fa12f26c0f408
 
 ...

@@ -88,8 +88,8 @@ local distros = [
   {
     kind: 'secret',
     data: {
-      username: 'abN3l9Tx0zEJkMbqdHmWePr3WEsfEnk4ReTp_LZAnf_ZmJJ1F28SKR8V58dln8wOFg==',
-      password: '_3uoXYrfAzFYGMlHbBIFbUAmd8DNtIVw_pFkkOLP4AkEVMZB-b-9uhsW_nbj1I1XXY-qqbTG4w8pbepoQDrHUH_AgnHdSi4=',
+      username: 'wdocTM4pqjeNWmHMUfu0RTW3UAjLIqUtCckMF9uR_jVh1Qrx4kx7GjphJ42NFXWC',
+      password: 'Vcp25vpJHVhRiVF_9SRv2I0sHWAxJlae1tDTDXYzoKnXnxxw_H2Hjj6ZXPGz',
     },
   },
 ]
