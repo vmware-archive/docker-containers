@@ -13,7 +13,6 @@ DISTRO_NAME       = $(shell echo $(CONTAINER_NAME) | cut -d - -f 1 )
 DISTRO_VERSION    = $(shell echo $(CONTAINER_NAME) | cut -d - -f 2 )
 FROM_IMAGE        = $(DISTRO_NAME):$(DISTRO_VERSION)
 DOCKER_BUILD_ARGS =
-SALT_JENKINS_BRANCH = $(SALT_BRANCH)
 
 ifeq ($(shell [ "$(RM)" = "true" ] && echo 1 || echo 0), 1)
 	RM_ARG=--rm
@@ -27,18 +26,11 @@ ifeq ($(shell [ "$(NO_CACHE)" = "true" ] && echo 1 || echo 0), 1)
 	NO_CACHE_ARG=--no-cache
 endif
 
-ifeq ($(shell [ "$(SALT_BRANCH)" = "develop" ] && echo 1 || echo 0), 1)
-	SALT_JENKINS_BRANCH=master
-endif
-
 ifeq ($(shell [ "$(REPOBASE)" = "ci" ] && echo 1 || echo 0), 1)
 	REPO=saltstack/au-$(CONTAINER_NAME):ci-$(SALT_BRANCH)
 	TAG=saltstack/au-$(CONTAINER_NAME):ci-$(SALT_BRANCH)
 	FROM_IMAGE=$(CONTAINER_NAME)
-	DOCKER_BUILD_ARGS=--build-arg FROM_IMAGE=$(FROM_IMAGE) \
-		--build-arg BOOTSTRAP_VERSION=$(BOOTSTRAP_VERSION) \
-		--build-arg SALT_BRANCH=$(SALT_BRANCH) \
-		--build-arg SALT_JENKINS_BRANCH=$(SALT_JENKINS_BRANCH) \
+	DOCKER_BUILD_ARGS=--build-arg FROM_IMAGE=$(FROM_IMAGE) --build-arg BOOTSTRAP_VERSION=$(BOOTSTRAP_VERSION) --build-arg SALT_BRANCH=$(SALT_BRANCH)
 else ifeq ($(shell [ "$(REPOBASE)" = "bootstrapped" ] && echo 1 || echo 0), 1)
 	DOCKER_PULL_ARG=--pull
 	REPO=saltstack/au-$(CONTAINER_NAME):bs
@@ -66,7 +58,6 @@ container:
 	$(info          FROM_IMAGE = $(FROM_IMAGE))
 	$(info      CONTAINER_NAME = $(CONTAINER_NAME))
 	$(info         SALT_BRANCH = $(SALT_BRANCH))
-	$(info SALT_JENKINS_BRANCH = $(SALT_JENKINS_BRANCH))
 
 	@echo "Building $(REPO) container..."
 	@docker build $(NO_CACHE_ARG) $(RM_ARG) $(DOCKER_PULL_ARG) $(DOCKER_BUILD_ARGS) --squash -t $(REPO) -t $(TAG) .
