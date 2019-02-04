@@ -12,6 +12,7 @@ RUN mkdir -p /srv/salt /srv/pillar && \
       git clone --branch ${SALT_BRANCH} https://github.com/saltstack/salt-jenkins.git /srv/salt && \
       printf "base:\n  '*':\n    - docker-builds" > /srv/pillar/top.sls && \
       printf "py3: false\nextra-swap: false\n" > /srv/pillar/docker-builds.sls && \
+      salt-call --local --retcode-passthrough saltutil.sync_all refresh=True && \
       salt-call --local --retcode-passthrough pillar.items && salt-call --local --retcode-passthrough state.apply ${SALT_STATE}
 
 # Cleanup
